@@ -13,7 +13,8 @@ if not CHANNEL_ID:
 
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 
-def slack_get(method, params):
+
+def slack_get(method: str, params: dict):
     r = requests.get(
         f"https://slack.com/api/{method}",
         headers=HEADERS,
@@ -26,7 +27,8 @@ def slack_get(method, params):
         raise RuntimeError(f"{method} failed: {data}")
     return data
 
-def slack_post(method, payload):
+
+def slack_post(method: str, payload: dict):
     r = requests.post(
         f"https://slack.com/api/{method}",
         headers=HEADERS,
@@ -39,21 +41,41 @@ def slack_post(method, payload):
         raise RuntimeError(f"{method} failed: {data}")
     return data
 
+
 def load_state():
     with open(STATE_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
+
 
 def save_state(state):
     with open(STATE_PATH, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
 
-def find_reply(dm_id, user_id, asked_at):
-    # asked_at以降のDM履歴を取得
-    res = slack_get("conversations.history", {"channel": dm_id, "oldest": str(asked_at)})
+
+def find_reply(dm_id: str, user_id: str, asked_at_ts: str):
+    """
+    asked_at_ts: Slack message ts string, e.g. "1700000000.123456"
+    Strategy:
+      1) Search after asked_at_ts
+      2) Fallback: search latest messages
+    """
+    # 1) after asked_at_ts
+    res = slack_get(
+        "conversations.history",
+        {"channel": dm_id, "oldest": str(asked_at_ts), "limit": 200},
+    )
     for m in res.get("messages", []):
         if m.get("type") == "message" and m.get("user") == user_id and m.get("text"):
             return m["text"]
+
+    # 2) fallback: latest 200
+    res2 = slack_get("conversations.history", {"channel": dm_id, "limit": 200})
+    for m in res2.get("messages", []):
+        if m.get("type") == "message" and m.get("user") == user_id and m.get("text"):
+            return m["text"]
+
     return None
+
 
 def main():
     state = load_state()
@@ -69,9 +91,9 @@ def main():
         user = p["user"]
         dm = p["dm"]
         q = p["question"]
-        asked_at = p["asked_at"]
+        asked_at = p["asked_at"]  # Slack ts string
 
-        print("checking user:", user, "dm:", dm)
+        print("checking user:", user, "dm:", dm, "asked_at:", asked_at)
 
         answer = find_reply(dm, user, asked_at)
         print("answer found:", bool(answer))
@@ -87,10 +109,6 @@ def main():
     save_state(state)
     print("done")
 
-
-    state["pending"] = new_pending
-    save_state(state)
-    print("done")
 
 if __name__ == "__main__":
     main()
