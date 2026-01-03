@@ -68,6 +68,12 @@ def find_reply(dm_id: str, user_id: str, thread_ts: str):
     return None
 
 
+def get_user_icon(user_id: str):
+    # users:read が必要（あなたは既に持ってる）
+    info = slack_get("users.info", {"user": user_id})
+    profile = info.get("user", {}).get("profile", {})
+    # 画像URLはいくつかサイズがある。512が綺麗
+    return profile.get("image_512") or profile.get("image_192") or profile.get("image_72")
 
 def main():
     state = load_state()
