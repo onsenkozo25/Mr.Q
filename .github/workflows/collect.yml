@@ -2,6 +2,8 @@ name: Collect and post
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "25 3 * * *"  # 毎日 12:25 JST
 
 permissions:
   contents: write
