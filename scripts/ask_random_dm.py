@@ -1,3 +1,6 @@
+if not CHANNEL_ID:
+    raise RuntimeError("SLACK_CHANNEL_ID is not set or empty (should be like C0123456789).")
+
 import os
 import random
 import requests
