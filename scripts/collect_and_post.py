@@ -88,8 +88,33 @@ def main():
 
         answer = find_reply(dm, user, thread_ts)  # ← ここ
         if answer:
-            text = f"🎤 <@{user}> の回答\n*Q:* {q}\n*A:* {answer}"
-            slack_post("chat.postMessage", {"channel": CHANNEL_ID, "text": text})
+           icon_url = get_user_icon(user)
+
+blocks = [
+    {"type": "header", "text": {"type": "plain_text", "text": f"{q}", "emoji": True}},
+    {"type": "section", "text": {"type": "mrkdwn", "text": f"*<@{user}> の回答*"}},
+]
+
+# “拡大アイコン”っぽく見せる：画像ブロック（大きめに表示される）
+if icon_url:
+    blocks.append({
+        "type": "image",
+        "image_url": icon_url,
+        "alt_text": "answerer icon"
+    })
+
+# 回答は“引用”っぽく見せる（縦線表示）
+blocks.append({
+    "type": "section",
+    "text": {"type": "mrkdwn", "text": f"> {answer.replace('\n', '\n> ')}"}
+})
+
+slack_post("chat.postMessage", {
+    "channel": CHANNEL_ID,
+    "text": f"{q} / <@{user}> の回答: {answer}",  # 通知/検索用のフォールバック
+    "blocks": blocks
+})
+
         else:
             new_pending.append(p)
 
