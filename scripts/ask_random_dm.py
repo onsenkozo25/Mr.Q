@@ -97,14 +97,13 @@ def main():
     state = load_state()
     state.setdefault("pending", [])
 
-    state["pending"].append(
-        {
-            "user": picked,
-            "dm": dm_id,
-            "question": QUESTION.replace("【テスト質問】", "").strip(),
-            "asked_at": asked_ts,  # store Slack ts (string)
-        }
-    )
+    state["pending"].append({
+        "user": picked,
+        "dm": dm_id,
+        "question": QUESTION.replace("【テスト質問】", "").strip(),
+        "thread_ts": asked_ts
+    })
+
     state["last_picked_user"] = picked
     save_state(state)
 
