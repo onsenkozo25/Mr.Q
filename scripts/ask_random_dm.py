@@ -39,7 +39,10 @@ while True:
         break
 
 if not members:
-    raise RuntimeError(f"No members found in channel {CHANNEL_ID}. Is the channel ID correct and is the bot in the channel?")
+    raise RuntimeError(
+        f"No members found in channel {CHANNEL_ID}. "
+        "Is the channel ID correct and is the bot invited?"
+    )
 
 # 2) Pick a random member
 picked = random.choice(members)
@@ -49,4 +52,13 @@ dm = slack("conversations.open", {"users": picked})
 dm_id = dm["channel"]["id"]
 
 # 4) Send the question
-slack("chat.po
+slack(
+    "chat.postMessage",
+    {
+        "channel": dm_id,
+        "text": QUESTION,
+    },
+)
+
+print("picked:", picked)
+print("sent")
