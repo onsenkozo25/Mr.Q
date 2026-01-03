@@ -104,9 +104,10 @@ if icon_url:
     })
 
 # 回答は“引用”っぽく見せる（縦線表示）
+quoted_answer = answer.replace("\n", "\n> ")
 blocks.append({
     "type": "section",
-    "text": {"type": "mrkdwn", "text": f"> {answer.replace('\n', '\n> ')}"}
+    "text": {"type": "mrkdwn", "text": f"> {quoted_answer}"}
 })
 
 slack_post("chat.postMessage", {
