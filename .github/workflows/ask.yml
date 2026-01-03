@@ -18,6 +18,17 @@ jobs:
           python-version: "3.11"
 
       - run: pip install requests
+      
+      - name: Debug env (safe)
+        run: |
+          python - << 'PY'
+          import os
+          cid = os.environ.get("SLACK_CHANNEL_ID","")
+          print("SLACK_CHANNEL_ID length:", len(cid))
+          print("SLACK_CHANNEL_ID startswith:", cid[:1])
+          PY
+
+      
 
       - name: Run script
         run: python scripts/ask_random_dm.py
