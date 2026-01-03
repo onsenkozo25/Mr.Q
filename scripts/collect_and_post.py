@@ -54,25 +54,33 @@ def save_state(state):
 
 def find_reply(dm_id: str, user_id: str, asked_at_ts: str):
     """
-    asked_at_ts: Slack message ts string, e.g. "1700000000.123456"
-    Strategy:
-      1) Search after asked_at_ts
-      2) Fallback: search latest messages
+    DMでは user フィールドが欠けるケースがあるため、
+    ・Bot以外
+    ・質問より後
+    の最新メッセージを回答として扱う
     """
-    # 1) after asked_at_ts
-    res = slack_get(
-        "conversations.history",
-        {"channel": dm_id, "oldest": str(asked_at_ts), "limit": 200},
-    )
-    for m in res.get("messages", []):
-        if m.get("type") == "message" and m.get("user") == user_id and m.get("text"):
-            return m["text"]
+    res = slack_get("conversations.history", {
+        "channel": dm_id,
+        "limit": 50
+    })
 
-    # 2) fallback: latest 200
-    res2 = slack_get("conversations.history", {"channel": dm_id, "limit": 200})
-    for m in res2.get("messages", []):
-        if m.get("type") == "message" and m.get("user") == user_id and m.get("text"):
-            return m["text"]
+    for m in res.get("messages", []):
+        # Botの発言は除外
+        if m.get("bot_id"):
+            continue
+
+        # テキストが無いものは除外
+        if not m.get("text"):
+            continue
+
+        # 質問より後のメッセージのみ
+        try:
+            if float(m.get("ts", 0)) <= float(asked_at_ts):
+                continue
+        except ValueError:
+            continue
+
+        return m["text"]
 
     return None
 
