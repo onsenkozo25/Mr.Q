@@ -2,6 +2,9 @@ name: Ask (random DM)
 
 on:
   workflow_dispatch:
+  
+permissions:
+  contents: write
 
 jobs:
   ask:
