@@ -1,10 +1,10 @@
-name: Ask (test DM)
+name: Ask (random DM)
 
 on:
   workflow_dispatch:
 
 jobs:
-  test:
+  ask:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,8 +15,8 @@ jobs:
 
       - run: pip install requests
 
-      - name: Send test DM
+      - name: Ask random member in DM
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          SLACK_TEST_USER_ID: ${{ secrets.SLACK_TEST_USER_ID }}
-        run: python scripts/test_dm.py
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+        run: python scripts/ask_random_dm.py
