@@ -8,14 +8,29 @@ CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")
 if not TOKEN:
     raise RuntimeError("SLACK_BOT_TOKEN is not set.")
 if not CHANNEL_ID:
-    raise RuntimeError("SLACK_CHANNEL_ID is not set or empty (should look like C0123456789 or G0123456789).")
+    raise RuntimeError("SLACK_CHANNEL_ID is not set or empty.")
 
 QUESTION = "【テスト質問】最近ハマってるものは？（このDMに返信してね）"
 
-def slack(method, payload):
+HEADERS = {"Authorization": f"Bearer {TOKEN}"}
+
+def slack_get(method, params):
+    r = requests.get(
+        f"https://slack.com/api/{method}",
+        headers=HEADERS,
+        params=params,
+        timeout=30,
+    )
+    r.raise_for_status()
+    data = r.json()
+    if not data.get("ok"):
+        raise RuntimeError(f"{method} failed: {data}")
+    return data
+
+def slack_post(method, payload):
     r = requests.post(
         f"https://slack.com/api/{method}",
-        headers={"Authorization": f"Bearer {TOKEN}"},
+        headers=HEADERS,
         json=payload,
         timeout=30,
     )
@@ -25,40 +40,31 @@ def slack(method, payload):
         raise RuntimeError(f"{method} failed: {data}")
     return data
 
-# 1) Get channel members
+# 1) Get channel members (GET with query params)
 members = []
 cursor = None
 while True:
-    payload = {"channel": CHANNEL_ID, "limit": 200}
+    params = {"channel": CHANNEL_ID, "limit": 200}
     if cursor:
-        payload["cursor"] = cursor
-    res = slack("conversations.members", payload)
+        params["cursor"] = cursor
+    res = slack_get("conversations.members", params)
     members.extend(res.get("members", []))
     cursor = res.get("response_metadata", {}).get("next_cursor")
     if not cursor:
         break
 
 if not members:
-    raise RuntimeError(
-        f"No members found in channel {CHANNEL_ID}. "
-        "Is the channel ID correct and is the bot invited?"
-    )
+    raise RuntimeError("No members found. Is the bot invited to the channel?")
 
-# 2) Pick a random member
+# 2) Pick random member
 picked = random.choice(members)
 
-# 3) Open DM with that member
-dm = slack("conversations.open", {"users": picked})
+# 3) Open DM
+dm = slack_post("conversations.open", {"users": picked})
 dm_id = dm["channel"]["id"]
 
-# 4) Send the question
-slack(
-    "chat.postMessage",
-    {
-        "channel": dm_id,
-        "text": QUESTION,
-    },
-)
+# 4) Send question
+slack_post("chat.postMessage", {"channel": dm_id, "text": QUESTION})
 
 print("picked:", picked)
 print("sent")
