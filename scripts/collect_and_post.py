@@ -58,6 +58,8 @@ def find_reply(dm_id, user_id, asked_at):
 def main():
     state = load_state()
     pending = state.get("pending", [])
+    print("pending count:", len(pending))
+
     if not pending:
         print("No pending.")
         return
@@ -69,12 +71,22 @@ def main():
         q = p["question"]
         asked_at = p["asked_at"]
 
+        print("checking user:", user, "dm:", dm)
+
         answer = find_reply(dm, user, asked_at)
+        print("answer found:", bool(answer))
+
         if answer:
             text = f"🎤 <@{user}> の回答\n*Q:* {q}\n*A:* {answer}"
             slack_post("chat.postMessage", {"channel": CHANNEL_ID, "text": text})
+            print("posted to channel")
         else:
             new_pending.append(p)
+
+    state["pending"] = new_pending
+    save_state(state)
+    print("done")
+
 
     state["pending"] = new_pending
     save_state(state)
