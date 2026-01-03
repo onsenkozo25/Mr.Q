@@ -4,6 +4,8 @@ import requests
 
 TOKEN = os.environ.get("SLACK_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")
+BOT_USER_ID = os.environ.get("SLACK_BOT_USER_ID")
+
 
 if not TOKEN:
     raise RuntimeError("SLACK_BOT_TOKEN is not set.")
@@ -57,7 +59,12 @@ if not members:
     raise RuntimeError("No members found. Is the bot invited to the channel?")
 
 # 2) Pick random member
-picked = random.choice(members)
+human_members = [u for u in members if u != BOT_USER_ID]
+
+if not human_members:
+    raise RuntimeError("No human members found (only bots?).")
+
+picked = random.choice(human_members)
 
 # 3) Open DM
 dm = slack_post("conversations.open", {"users": picked})
