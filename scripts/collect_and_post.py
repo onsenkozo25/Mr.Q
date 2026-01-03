@@ -53,36 +53,46 @@ def save_state(state):
 
 
 def find_reply(dm_id: str, user_id: str, asked_at_ts: str):
-    """
-    DMでは user フィールドが欠けるケースがあるため、
-    ・Bot以外
-    ・質問より後
-    の最新メッセージを回答として扱う
-    """
     res = slack_get("conversations.history", {
         "channel": dm_id,
-        "limit": 50
+        "limit": 20,
+        "inclusive": True
     })
 
-    for m in res.get("messages", []):
-        # Botの発言は除外
-        if m.get("bot_id"):
-            continue
+    print("---- history debug (no text) ----")
+    print("asked_at_ts:", asked_at_ts)
 
-        # テキストが無いものは除外
+    for m in res.get("messages", []):
+        ts = m.get("ts")
+        has_text = bool(m.get("text"))
+        is_bot = bool(m.get("bot_id")) or (m.get("subtype") == "bot_message")
+        u = m.get("user")
+        subtype = m.get("subtype")
+        print("ts:", ts, "user:", u, "bot:", is_bot, "subtype:", subtype, "has_text:", has_text)
+
+    # ここから回答探索（いまは “質問より後” を優先）
+    for m in res.get("messages", []):
+        if m.get("bot_id") or m.get("subtype") == "bot_message":
+            continue
         if not m.get("text"):
             continue
-
-        # 質問より後のメッセージのみ
         try:
             if float(m.get("ts", 0)) <= float(asked_at_ts):
                 continue
         except ValueError:
             continue
-
         return m["text"]
 
+    # フォールバック：質問より後が無いなら「最新の非botメッセージ」を拾う（テスト用）
+    for m in res.get("messages", []):
+        if m.get("bot_id") or m.get("subtype") == "bot_message":
+            continue
+        if m.get("text"):
+            print("fallback picked ts:", m.get("ts"))
+            return m["text"]
+
     return None
+
 
 
 def main():
