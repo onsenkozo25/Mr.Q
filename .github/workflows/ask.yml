@@ -1,34 +1,23 @@
-name: Ask (random DM)
+name: Debug env only
 
 on:
   workflow_dispatch:
 
 jobs:
-  ask:
+  debug:
     runs-on: ubuntu-latest
     env:
       SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
 
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - run: pip install requests
-      
-      - name: Debug env (safe)
+      - name: Print env safely
         run: |
           python - << 'PY'
           import os
-          cid = os.environ.get("SLACK_CHANNEL_ID","")
+          cid = os.environ.get("SLACK_CHANNEL_ID", "")
+          token = os.environ.get("SLACK_BOT_TOKEN", "")
           print("SLACK_CHANNEL_ID length:", len(cid))
           print("SLACK_CHANNEL_ID startswith:", cid[:1])
+          print("SLACK_BOT_TOKEN exists:", bool(token))
           PY
-
-      
-
-      - name: Run script
-        run: python scripts/ask_random_dm.py
