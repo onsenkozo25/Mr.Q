@@ -21,3 +21,20 @@ jobs:
           python-version: "3.11"
       - run: pip install requests
       - run: python scripts/ask_random_dm.py
+      
+      - name: Show git status (debug)
+        run: |
+          git status
+          git diff -- state/state.json || true
+
+      - name: Commit state update
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add state/state.json
+          git commit -m "Update state (ask)" || echo "No changes"
+
+      - name: Push
+        run: |
+          git push
+
