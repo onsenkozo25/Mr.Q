@@ -52,43 +52,17 @@ def save_state(state):
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 
-def find_reply(dm_id: str, user_id: str, asked_at_ts: str):
-    res = slack_get("conversations.history", {
+def find_reply(dm_id: str, user_id: str, thread_ts: str):
+    # スレッドの親(ts)にぶら下がる返信を取得
+    res = slack_get("conversations.replies", {
         "channel": dm_id,
-        "limit": 20,
-        "inclusive": True
+        "ts": str(thread_ts),
+        "limit": 200
     })
 
-    print("---- history debug (no text) ----")
-    print("asked_at_ts:", asked_at_ts)
-
-    for m in res.get("messages", []):
-        ts = m.get("ts")
-        has_text = bool(m.get("text"))
-        is_bot = bool(m.get("bot_id")) or (m.get("subtype") == "bot_message")
-        u = m.get("user")
-        subtype = m.get("subtype")
-        print("ts:", ts, "user:", u, "bot:", is_bot, "subtype:", subtype, "has_text:", has_text)
-
-    # ここから回答探索（いまは “質問より後” を優先）
-    for m in res.get("messages", []):
-        if m.get("bot_id") or m.get("subtype") == "bot_message":
-            continue
-        if not m.get("text"):
-            continue
-        try:
-            if float(m.get("ts", 0)) <= float(asked_at_ts):
-                continue
-        except ValueError:
-            continue
-        return m["text"]
-
-    # フォールバック：質問より後が無いなら「最新の非botメッセージ」を拾う（テスト用）
-    for m in res.get("messages", []):
-        if m.get("bot_id") or m.get("subtype") == "bot_message":
-            continue
-        if m.get("text"):
-            print("fallback picked ts:", m.get("ts"))
+    # messages[0] が親（質問）で、messages[1:] が返信
+    for m in res.get("messages", [])[1:]:
+        if m.get("user") == user_id and m.get("text"):
             return m["text"]
 
     return None
@@ -98,30 +72,21 @@ def find_reply(dm_id: str, user_id: str, asked_at_ts: str):
 def main():
     state = load_state()
     pending = state.get("pending", [])
-    print("pending count:", len(pending))
-
-    if not pending:
-        print("No pending.")
-        return
 
     new_pending = []
     for p in pending:
         user = p["user"]
         dm = p["dm"]
         q = p["question"]
-        asked_at = p["asked_at"]  # Slack ts string
+        thread_ts = p["thread_ts"]   # ← ここ
 
-        print("checking user:", user, "dm:", dm, "asked_at:", asked_at)
-
-        answer = find_reply(dm, user, asked_at)
-        print("answer found:", bool(answer))
-
+        answer = find_reply(dm, user, thread_ts)  # ← ここ
         if answer:
             text = f"🎤 <@{user}> の回答\n*Q:* {q}\n*A:* {answer}"
             slack_post("chat.postMessage", {"channel": CHANNEL_ID, "text": text})
-            print("posted to channel")
         else:
             new_pending.append(p)
+
 
     state["pending"] = new_pending
     save_state(state)
