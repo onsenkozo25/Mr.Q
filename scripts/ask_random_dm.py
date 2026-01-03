@@ -6,6 +6,7 @@ import requests
 TOKEN = os.environ.get("SLACK_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")
 BOT_USER_ID = os.environ.get("SLACK_BOT_USER_ID")
+ASK_COUNT = int(os.environ.get("ASK_COUNT", "3"))  # 1回に何人に送るか（デフォルト3）
 
 if not TOKEN:
     raise RuntimeError("SLACK_BOT_TOKEN is not set.")
@@ -13,9 +14,11 @@ if not CHANNEL_ID:
     raise RuntimeError("SLACK_CHANNEL_ID is not set or empty.")
 if not BOT_USER_ID:
     raise RuntimeError("SLACK_BOT_USER_ID is not set or empty.")
+if ASK_COUNT < 1:
+    raise RuntimeError("ASK_COUNT must be >= 1.")
 
 STATE_PATH = "state/state.json"
-QUESTION = "【テスト質問】最近ハマってるものは？（このDMに返信してね）"
+QUESTIONS_PATH = "questions.json"
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 
 
@@ -57,6 +60,16 @@ def save_state(state):
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 
+def load_questions():
+    with open(QUESTIONS_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    qs = data.get("questions", [])
+    qs = [q.strip() for q in qs if isinstance(q, str) and q.strip()]
+    if not qs:
+        raise RuntimeError("questions.json has no valid questions.")
+    return qs
+
+
 def get_channel_members(channel_id: str):
     members = []
     cursor = None
@@ -69,48 +82,56 @@ def get_channel_members(channel_id: str):
         cursor = res.get("response_metadata", {}).get("next_cursor")
         if not cursor:
             break
+    # de-dup while preserving order
+    members = list(dict.fromkeys(members))
     return members
 
 
 def main():
+    questions = load_questions()
+
     # 1) members
     members = get_channel_members(CHANNEL_ID)
-
-    # 2) exclude bot & de-dup
-    members = list(dict.fromkeys(members))
+    # 2) exclude bot
     human_members = [u for u in members if u != BOT_USER_ID]
     if not human_members:
         raise RuntimeError("No human members found (only bots?).")
 
-    # 3) pick random
-    picked = random.choice(human_members)
+    # 3) decide how many we can actually ask
+    n = min(ASK_COUNT, len(human_members), len(questions))
 
-    # 4) open DM
-    dm = slack_post("conversations.open", {"users": picked})
-    dm_id = dm["channel"]["id"]
+    picked_users = random.sample(human_members, n)
+    picked_questions = random.sample(questions, n)
 
-    # 5) send question + capture Slack ts
-    msg = slack_post("chat.postMessage", {"channel": dm_id, "text": QUESTION})
-    asked_ts = msg["ts"]  # Slack message ts (string like "1700000000.123456")
-
-    # 6) save pending
+    # 4) load state
     state = load_state()
     state.setdefault("pending", [])
 
-    state["pending"].append({
-        "user": picked,
-        "dm": dm_id,
-        "question": QUESTION.replace("【テスト質問】", "").strip(),
-        "thread_ts": asked_ts
-    })
+    # 5) send DM per user with a unique question; save thread_ts per DM message
+    for user_id, q in zip(picked_users, picked_questions):
+        # open DM
+        dm = slack_post("conversations.open", {"users": user_id})
+        dm_id = dm["channel"]["id"]
 
-    state["last_picked_user"] = picked
+        text = f"【今日の質問】{q}\n（このメッセージのスレッドに返信してね）"
+        msg = slack_post("chat.postMessage", {"channel": dm_id, "text": text})
+        thread_ts = msg["ts"]
+
+        state["pending"].append(
+            {
+                "user": user_id,
+                "dm": dm_id,
+                "question": q,
+                "thread_ts": thread_ts,
+            }
+        )
+
+        print("sent:", user_id, "dm:", dm_id, "thread_ts:", thread_ts)
+
+    # 6) save state
+    state["last_picked_user"] = picked_users[-1] if picked_users else state.get("last_picked_user")
     save_state(state)
-
-    print("picked:", picked)
-    print("dm:", dm_id)
-    print("asked_ts:", asked_ts)
-    print("saved pending")
+    print("saved pending:", n)
 
 
 if __name__ == "__main__":
