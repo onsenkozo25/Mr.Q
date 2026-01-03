@@ -1,4 +1,4 @@
-name: Ask (dummy)
+name: Ask (test DM)
 
 on:
   workflow_dispatch:
@@ -7,4 +7,16 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Actions is ready"
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests
+
+      - name: Send test DM
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_TEST_USER_ID: ${{ secrets.SLACK_TEST_USER_ID }}
+        run: python scripts/test_dm.py
