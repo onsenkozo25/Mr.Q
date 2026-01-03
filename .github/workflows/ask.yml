@@ -6,6 +6,10 @@ on:
 jobs:
   ask:
     runs-on: ubuntu-latest
+    env:
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+
     steps:
       - uses: actions/checkout@v4
 
@@ -15,8 +19,5 @@ jobs:
 
       - run: pip install requests
 
-      - name: Ask random member in DM
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+      - name: Run script
         run: python scripts/ask_random_dm.py
