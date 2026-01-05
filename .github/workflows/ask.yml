@@ -3,7 +3,8 @@ name: Ask (random DM)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9 * * *"   # 毎日 18:00 JST
+    - cron: "0 11 * * *"  # 毎日 20:00 JST
+
     
 permissions:
   contents: write
