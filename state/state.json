@@ -24,6 +24,29 @@
       "dm": "D0A6KC5KG6R",
       "question": "今週の自分をひと言で表すと？",
       "thread_ts": "1767517813.304329"
+    },
+    {
+      "user": "U06SGS15WKT",
+      "dm": "D0A6LLE6YM9",
+      "question": "最近笑ったことは？",
+      "thread_ts": "1767604906.086119"
+    },
+    {
+      "user": "U08L3P2H561",
+      "dm": "D0A6PK07FKP",
+      "question": "明日急に休みになったら何する？",
+      "thread_ts": "1767604906.382499"
+    },
+    {
+      "user": "U08L3P3K2SZ",
+      "dm": "D0A7600EJCR",
+      "question": "最近聴いてる曲は？",
+      "thread_ts": "1767604906.667119"
     }
+  ],
+  "last_picked_users": [
+    "U06SGS15WKT",
+    "U08L3P2H561",
+    "U08L3P3K2SZ"
   ]
 }
