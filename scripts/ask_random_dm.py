@@ -6,7 +6,12 @@ import requests
 TOKEN = os.environ.get("SLACK_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")
 BOT_USER_ID = os.environ.get("SLACK_BOT_USER_ID")
-ASK_COUNT = int(os.environ.get("ASK_COUNT", "3"))  # 1回に何人に送るか（デフォルト3）
+ASK_COUNT = int(os.environ.get("ASK_COUNT", "3"))  # 1回に何人へ送るか（デフォルト3）
+
+# カンマ区切りの除外ユーザーID
+EXCLUDE_USER_IDS = set(
+    u.strip() for u in os.environ.get("EXCLUDE_USER_IDS", "").split(",") if u.strip()
+)
 
 if not TOKEN:
     raise RuntimeError("SLACK_BOT_TOKEN is not set.")
@@ -83,8 +88,7 @@ def get_channel_members(channel_id: str):
         if not cursor:
             break
     # de-dup while preserving order
-    members = list(dict.fromkeys(members))
-    return members
+    return list(dict.fromkeys(members))
 
 
 def main():
@@ -92,10 +96,18 @@ def main():
 
     # 1) members
     members = get_channel_members(CHANNEL_ID)
-    # 2) exclude bot
-    human_members = [u for u in members if u != BOT_USER_ID]
+
+    # 2) exclude bot + excluded IDs
+    excluded = set(EXCLUDE_USER_IDS)
+    excluded.add(BOT_USER_ID)
+
+    human_members = [u for u in members if u not in excluded]
+
     if not human_members:
-        raise RuntimeError("No human members found (only bots?).")
+        raise RuntimeError(
+            "No eligible members found. "
+            "Check SLACK_CHANNEL_ID, bot membership in channel, and EXCLUDE_USER_IDS."
+        )
 
     # 3) decide how many we can actually ask
     n = min(ASK_COUNT, len(human_members), len(questions))
@@ -129,9 +141,12 @@ def main():
         print("sent:", user_id, "dm:", dm_id, "thread_ts:", thread_ts)
 
     # 6) save state
-    state["last_picked_user"] = picked_users[-1] if picked_users else state.get("last_picked_user")
+    state["last_picked_users"] = picked_users
     save_state(state)
-    print("saved pending:", n)
+
+    print("excluded:", ",".join(sorted(excluded)) if excluded else "(none)")
+    print("asked_count:", n)
+    print("saved pending total:", len(state["pending"]))
 
 
 if __name__ == "__main__":
