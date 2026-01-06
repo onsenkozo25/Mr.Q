@@ -30,11 +30,29 @@
       "dm": "D0A6RM8G59U",
       "question": "最近聴いてる曲は？",
       "thread_ts": "1767612139.086209"
+    },
+    {
+      "user": "U08L3P3NBEZ",
+      "dm": "D0A7EFP9Y5P",
+      "question": "最近読んだ/見たものでおすすめある？",
+      "thread_ts": "1767698518.015949"
+    },
+    {
+      "user": "U08L3P3ELTF",
+      "dm": "D0A71HQGFNW",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1767698518.532169"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "好きな食べ物とそれにまつわるエピソード",
+      "thread_ts": "1767698519.118319"
     }
   ],
   "last_picked_users": [
-    "U04RZRKCGPM",
-    "U04RTBHG71C",
-    "U0521QF30GY"
+    "U08L3P3NBEZ",
+    "U08L3P3ELTF",
+    "U06ST0DS4N4"
   ]
 }
