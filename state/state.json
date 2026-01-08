@@ -48,11 +48,29 @@
       "dm": "D0A71HQA0US",
       "question": "好きな食べ物とそれにまつわるエピソード",
       "thread_ts": "1767698519.118319"
+    },
+    {
+      "user": "U06SGS14NHF",
+      "dm": "D0A7MBJMJ4C",
+      "question": "今週の自分をひと言で表すと？",
+      "thread_ts": "1767871422.412199"
+    },
+    {
+      "user": "U08L3P4BKMK",
+      "dm": "D0A7HPDTXUJ",
+      "question": "死ぬ前に食べたいものは",
+      "thread_ts": "1767871422.708269"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "ついついみちゃうタイプのショート動画は？",
+      "thread_ts": "1767871422.987659"
     }
   ],
   "last_picked_users": [
-    "U08L3P3LWDT",
-    "U04SCJCFCSD",
-    "U06ST0E3XNC"
+    "U06SGS14NHF",
+    "U08L3P4BKMK",
+    "U08L3NZUELV"
   ]
 }
