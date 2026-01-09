@@ -60,11 +60,29 @@
       "dm": "D0A7HPDTXUJ",
       "question": "死ぬ前に食べたいものは",
       "thread_ts": "1767871422.708269"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1767957725.681339"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "最近のマイブーム（食・運動・趣味なんでも）",
+      "thread_ts": "1767957726.213519"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "みんなにおすすめしたいけど、独り占めしたい気もする曲は？",
+      "thread_ts": "1767957726.748149"
     }
   ],
   "last_picked_users": [
-    "U06SGS14NHF",
-    "U08L3P4BKMK",
+    "U08L3P4571B",
+    "U06ST0E3XNC",
     "U08L3NZUELV"
   ]
 }
