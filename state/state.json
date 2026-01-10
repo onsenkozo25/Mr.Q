@@ -60,11 +60,29 @@
       "dm": "D0A7HPDTXUJ",
       "question": "死ぬ前に食べたいものは",
       "thread_ts": "1767871422.708269"
+    },
+    {
+      "user": "U08L3P3LWDT",
+      "dm": "D0A763VS0KX",
+      "question": "いま一番やりたい小さなチャレンジは？",
+      "thread_ts": "1768043979.356349"
+    },
+    {
+      "user": "U06ST0EKW9W",
+      "dm": "D0A81LEKCKW",
+      "question": "今の気分を食べ物に例えると？",
+      "thread_ts": "1768043980.023849"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "そろそろ克服したいことは？",
+      "thread_ts": "1768043980.656789"
     }
   ],
   "last_picked_users": [
-    "U08L3P4571B",
-    "U06ST0E3XNC",
-    "U08L3NZUELV"
+    "U08L3P3LWDT",
+    "U06ST0EKW9W",
+    "U08L3P38W5B"
   ]
 }
