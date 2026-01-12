@@ -66,11 +66,29 @@
       "dm": "D0A81LEKCKW",
       "question": "今の気分を食べ物に例えると？",
       "thread_ts": "1768043980.023849"
+    },
+    {
+      "user": "U08L3P3T9FF",
+      "dm": "D0A89275R52",
+      "question": "最近「学びになったな」と思ったことは？",
+      "thread_ts": "1768217025.707379"
+    },
+    {
+      "user": "U06S4371MM1",
+      "dm": "D0A821ED5LM",
+      "question": "最近買ってよかったものは？",
+      "thread_ts": "1768217026.299079"
+    },
+    {
+      "user": "U08L3P3A9MK",
+      "dm": "D0A813MAL8J",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1768217026.881249"
     }
   ],
   "last_picked_users": [
-    "U08L3P3A9MK",
-    "U08L3P47ZS9",
-    "U06ST0E3XNC"
+    "U08L3P3T9FF",
+    "U06S4371MM1",
+    "U08L3P3A9MK"
   ]
 }
