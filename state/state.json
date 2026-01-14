@@ -84,11 +84,29 @@
       "dm": "D0A8HF16MD2",
       "question": "そろそろ克服したいことは？",
       "thread_ts": "1768303416.436339"
+    },
+    {
+      "user": "U06RXHDG4JJ",
+      "dm": "D0A8NCP740J",
+      "question": "最近買ってよかったものは？",
+      "thread_ts": "1768389869.852889"
+    },
+    {
+      "user": "U06S46NMA66",
+      "dm": "D0A8G1P2BJP",
+      "question": "最近ちょっと困ってること（軽めで）ある？",
+      "thread_ts": "1768389870.404169"
+    },
+    {
+      "user": "U08L3P3NBEZ",
+      "dm": "D0A7EFP9Y5P",
+      "question": "最近気づいた自分の特技",
+      "thread_ts": "1768389870.838049"
     }
   ],
   "last_picked_users": [
-    "U08L3P3NBEZ",
-    "U06S437D0KD",
-    "U04QQGXLE9X"
+    "U06RXHDG4JJ",
+    "U06S46NMA66",
+    "U08L3P3NBEZ"
   ]
 }
