@@ -1,6 +1,9 @@
 import os
 import json
 import requests
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
 
 TOKEN = os.environ.get("SLACK_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")
@@ -26,6 +29,29 @@ def slack_get(method: str, params: dict):
     if not data.get("ok"):
         raise RuntimeError(f"{method} failed: {data}")
     return data
+def today_key_jst():
+    return datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y-%m-%d")
+
+def ensure_daily_thread(state: dict) -> str:
+    """
+    その日の「今日のQuestion」親投稿(ts)を返す。
+    なければ作って state に保存する。
+    """
+    day = today_key_jst()
+    threads = state.setdefault("daily_threads", {})
+
+    # 既に今日の親があればそれを使う
+    if day in threads and threads[day].get("thread_ts"):
+        return threads[day]["thread_ts"]
+
+    # なければ作成
+    text = f"📌 *今日のQuestion*（{day}）\nこのスレッドに、今日集まった回答をまとめます。"
+    msg = slack_post("chat.postMessage", {"channel": CHANNEL_ID, "text": text})
+    thread_ts = msg["ts"]
+
+    threads[day] = {"thread_ts": thread_ts}
+    save_state(state)
+    return thread_ts
 
 
 def slack_post(method: str, payload: dict):
@@ -78,52 +104,53 @@ def find_reply(dm_id: str, user_id: str, thread_ts: str):
     return None
 
 
-def post_pretty(channel_id: str, question: str, answerer_user_id: str, answer_text: str):
+def post_pretty(channel_id: str, thread_ts: str, question: str, answerer_user_id: str, answer_text: str):
     icon_url = get_user_icon(answerer_user_id)
 
+    # スレッド返信では header より section の方が読みやすいので sectionにする
     blocks = [
         {
-            "type": "header",
-            "text": {"type": "plain_text", "text": question, "emoji": True},
+            "type": "section",
+            "text": {"type": "mrkdwn", "text": f"*Q.* {question}"}
         },
         {
             "type": "section",
-            "text": {"type": "mrkdwn", "text": f"*<@{answerer_user_id}> の回答*"},
-        },
+            "text": {"type": "mrkdwn", "text": f"*<@{answerer_user_id}> の回答*"}
+        }
     ]
 
-    # “拡大アイコン”っぽく見せる：画像ブロック（Slack側で大きめに表示される）
     if icon_url:
-        blocks.append(
-            {"type": "image", "image_url": icon_url, "alt_text": "answerer icon"}
-        )
+        blocks.append({
+            "type": "image",
+            "image_url": icon_url,
+            "alt_text": "answerer icon"
+        })
 
-    # 回答を引用表示（左に縦線）
     quoted_answer = answer_text.replace("\n", "\n> ")
-    blocks.append(
-        {"type": "section", "text": {"type": "mrkdwn", "text": f"> {quoted_answer}"}}
-    )
+    blocks.append({
+        "type": "section",
+        "text": {"type": "mrkdwn", "text": f"> {quoted_answer}"}
+    })
 
-    slack_post(
-        "chat.postMessage",
-        {
-            "channel": channel_id,
-            # フォールバック（通知/検索用）
-            "text": f"{question} / <@{answerer_user_id}> の回答",
-            "blocks": blocks,
-        },
-    )
+    slack_post("chat.postMessage", {
+        "channel": channel_id,
+        "thread_ts": thread_ts,  # ← ここが重要（スレッドに返信）
+        "text": f"Q: {question} / <@{answerer_user_id}> の回答",
+        "blocks": blocks
+    })
 
 
 def main():
     state = load_state()
     pending = state.get("pending", [])
+
     print("pending count:", len(pending))
 
     if not pending:
         print("No pending.")
         return
 
+    daily_thread_ts = ensure_daily_thread(state)
     new_pending = []
 
     for p in pending:
@@ -133,7 +160,6 @@ def main():
         thread_ts = p.get("thread_ts")
 
         if not thread_ts:
-            # 古い形式が混ざってたら残す（または捨てる）
             print("missing thread_ts, keep pending:", user)
             new_pending.append(p)
             continue
@@ -144,7 +170,7 @@ def main():
         print("answer found:", bool(answer))
 
         if answer:
-            post_pretty(CHANNEL_ID, q, user, answer)
+            post_pretty(CHANNEL_ID, daily_thread_ts, q, user, answer)
             print("posted to channel")
         else:
             new_pending.append(p)
@@ -152,7 +178,3 @@ def main():
     state["pending"] = new_pending
     save_state(state)
     print("done")
-
-
-if __name__ == "__main__":
-    main()
