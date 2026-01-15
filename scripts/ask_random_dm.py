@@ -6,7 +6,7 @@ import requests
 TOKEN = os.environ.get("SLACK_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")
 BOT_USER_ID = os.environ.get("SLACK_BOT_USER_ID")
-ASK_COUNT = int(os.environ.get("ASK_COUNT", "3"))  # 1回に何人へ送るか（デフォルト3）
+ASK_COUNT = int(os.environ.get("ASK_COUNT", "5"))  # 1回に何人へ送るか（デフォルト3）
 
 # カンマ区切りの除外ユーザーID
 EXCLUDE_USER_IDS = set(
