@@ -84,11 +84,29 @@
       "dm": "D0A7EFP9Y5P",
       "question": "最近気づいた自分の特技",
       "thread_ts": "1768389870.838049"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "好きな色とそれにまつわるエピソード",
+      "thread_ts": "1768476198.208649"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "子どもの頃好きだった遊びは？",
+      "thread_ts": "1768476198.672049"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "最近気づいた自分の特技",
+      "thread_ts": "1768476199.137649"
     }
   ],
   "last_picked_users": [
-    "U06RXHDG4JJ",
-    "U06S46NMA66",
-    "U08L3P3NBEZ"
+    "U08L3P4571B",
+    "U06ST0E3XNC",
+    "U08L3P38W5B"
   ]
 }
