@@ -102,11 +102,29 @@
       "dm": "D0A7W1VN5DL",
       "question": "最近気づいた自分の特技",
       "thread_ts": "1768476199.137649"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "最近気づいた自分の特技",
+      "thread_ts": "1768562558.384089"
+    },
+    {
+      "user": "U04RTBHG71C",
+      "dm": "D0A7N20NQU8",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1768562558.587489"
+    },
+    {
+      "user": "U06S437D0KD",
+      "dm": "D0A8SQSNN0H",
+      "question": "最近「学びになったな」と思ったことは？",
+      "thread_ts": "1768562558.792859"
     }
   ],
   "last_picked_users": [
-    "U08L3P4571B",
     "U06ST0E3XNC",
-    "U08L3P38W5B"
+    "U04RTBHG71C",
+    "U06S437D0KD"
   ]
 }
