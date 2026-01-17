@@ -120,11 +120,29 @@
       "dm": "D0A8SQSNN0H",
       "question": "最近「学びになったな」と思ったことは？",
       "thread_ts": "1768562558.792859"
+    },
+    {
+      "user": "U08L3P3LWDT",
+      "dm": "D0A763VS0KX",
+      "question": "最近ちょっと困ってること（軽めで）ある？",
+      "thread_ts": "1768648760.704109"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "みんなにおすすめしたいけど、独り占めしたい気もする曲は？",
+      "thread_ts": "1768648761.190289"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "高専のお気に入りスポット",
+      "thread_ts": "1768648761.702019"
     }
   ],
   "last_picked_users": [
-    "U06ST0E3XNC",
-    "U04RTBHG71C",
-    "U06S437D0KD"
+    "U08L3P3LWDT",
+    "U08L3NZUELV",
+    "U08L3P38W5B"
   ]
 }
