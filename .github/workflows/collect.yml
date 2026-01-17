@@ -17,12 +17,25 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install requests
-      - run: python scripts/collect_and_post.py
 
+      - run: pip install requests
+
+      # 🔍 先に state を確認
+      - name: Debug state before collect
+        run: |
+          echo "=== state before collect ==="
+          ls -la state
+          cat state/state.json
+
+      # ▶️ collect は 1回だけ（-u 付き）
+      - name: Run collector
+        run: python -u scripts/collect_and_post.py
+
+      # 💾 state 更新をコミット
       - name: Commit state update
         run: |
           git config user.name "github-actions"
