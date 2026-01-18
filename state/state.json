@@ -138,11 +138,29 @@
       "dm": "D0A7W1VN5DL",
       "question": "高専のお気に入りスポット",
       "thread_ts": "1768648761.702019"
+    },
+    {
+      "user": "U06ST0EKW9W",
+      "dm": "D0A81LEKCKW",
+      "question": "高専のお気に入りスポット",
+      "thread_ts": "1768735136.594399"
+    },
+    {
+      "user": "U08L3P3K2SZ",
+      "dm": "D0A7600EJCR",
+      "question": "今週いちばん嬉しかったことは？",
+      "thread_ts": "1768735137.119549"
+    },
+    {
+      "user": "U05K75QUXUP",
+      "dm": "D0A9TJPRX41",
+      "question": "好きな色とそれにまつわるエピソード",
+      "thread_ts": "1768735137.715659"
     }
   ],
   "last_picked_users": [
-    "U08L3P3LWDT",
-    "U08L3NZUELV",
-    "U08L3P38W5B"
+    "U06ST0EKW9W",
+    "U08L3P3K2SZ",
+    "U05K75QUXUP"
   ]
 }
