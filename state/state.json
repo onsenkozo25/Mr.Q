@@ -156,11 +156,29 @@
       "dm": "D0A9TJPRX41",
       "question": "好きな色とそれにまつわるエピソード",
       "thread_ts": "1768735137.715659"
+    },
+    {
+      "user": "U08L3P3A9MK",
+      "dm": "D0A813MAL8J",
+      "question": "計画立てるの得意？",
+      "thread_ts": "1768821866.606939"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "最近「学びになったな」と思ったことは？",
+      "thread_ts": "1768821867.049109"
+    },
+    {
+      "user": "U08L3P3FYKF",
+      "dm": "D0AADSQ08M6",
+      "question": "最近ちょっと困ってること（軽めで）ある？",
+      "thread_ts": "1768821867.560069"
     }
   ],
   "last_picked_users": [
-    "U06ST0EKW9W",
-    "U08L3P3K2SZ",
-    "U05K75QUXUP"
+    "U08L3P3A9MK",
+    "U08L3P38W5B",
+    "U08L3P3FYKF"
   ]
 }
