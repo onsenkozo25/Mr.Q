@@ -174,11 +174,29 @@
       "dm": "D0AADSQ08M6",
       "question": "最近ちょっと困ってること（軽めで）ある？",
       "thread_ts": "1768821867.560069"
+    },
+    {
+      "user": "U08L3P3K2SZ",
+      "dm": "D0A7600EJCR",
+      "question": "最近気づいた自分の特技",
+      "thread_ts": "1768908361.117279"
+    },
+    {
+      "user": "U08L3P4BKMK",
+      "dm": "D0A7HPDTXUJ",
+      "question": "今の気分を食べ物に例えると？",
+      "thread_ts": "1768908361.652789"
+    },
+    {
+      "user": "U06SGS15WKT",
+      "dm": "D0A6LLE6YM9",
+      "question": "最近ちょっと困ってること（軽めで）ある？",
+      "thread_ts": "1768908362.199619"
     }
   ],
   "last_picked_users": [
-    "U08L3P3A9MK",
-    "U08L3P38W5B",
-    "U08L3P3FYKF"
+    "U08L3P3K2SZ",
+    "U08L3P4BKMK",
+    "U06SGS15WKT"
   ]
 }
