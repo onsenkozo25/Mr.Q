@@ -192,11 +192,29 @@
       "dm": "D0A6LLE6YM9",
       "question": "最近ちょっと困ってること（軽めで）ある？",
       "thread_ts": "1768908362.199619"
+    },
+    {
+      "user": "U08L3NWS7U5",
+      "dm": "D0AA4TVSAUC",
+      "question": "最近のマイブーム（食・運動・趣味なんでも）",
+      "thread_ts": "1768994837.577669"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "好きな食べ物とそれにまつわるエピソード",
+      "thread_ts": "1768994837.873049"
+    },
+    {
+      "user": "U08L3P47ZS9",
+      "dm": "D0A8VCU9M16",
+      "question": "自分だけが知ってる、あの人の癖は？",
+      "thread_ts": "1768994838.147789"
     }
   ],
   "last_picked_users": [
-    "U08L3P3K2SZ",
-    "U08L3P4BKMK",
-    "U06SGS15WKT"
+    "U08L3NWS7U5",
+    "U04RX1N2QCV",
+    "U08L3P47ZS9"
   ]
 }
