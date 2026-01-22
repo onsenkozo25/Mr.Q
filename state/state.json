@@ -210,11 +210,29 @@
       "dm": "D0A8VCU9M16",
       "question": "自分だけが知ってる、あの人の癖は？",
       "thread_ts": "1768994838.147789"
+    },
+    {
+      "user": "U08L3P3T9FF",
+      "dm": "D0A89275R52",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1769081147.159179"
+    },
+    {
+      "user": "U0521QF30GY",
+      "dm": "D0A6RM8G59U",
+      "question": "最近読んだ/見たものでおすすめある？",
+      "thread_ts": "1769081147.368659"
+    },
+    {
+      "user": "U06S6LA3F6G",
+      "dm": "D0AB4CFA4HW",
+      "question": "今週の目標は？",
+      "thread_ts": "1769081147.644569"
     }
   ],
   "last_picked_users": [
-    "U08L3NWS7U5",
-    "U04RX1N2QCV",
-    "U08L3P47ZS9"
+    "U08L3P3T9FF",
+    "U0521QF30GY",
+    "U06S6LA3F6G"
   ]
 }
