@@ -228,11 +228,29 @@
       "dm": "D0AB4CFA4HW",
       "question": "今週の目標は？",
       "thread_ts": "1769081147.644569"
+    },
+    {
+      "user": "U08L3NWS7U5",
+      "dm": "D0AA4TVSAUC",
+      "question": "今、誰かに感謝したいことは？",
+      "thread_ts": "1769167442.937289"
+    },
+    {
+      "user": "U06SGS14NHF",
+      "dm": "D0A7MBJMJ4C",
+      "question": "今週の目標は？",
+      "thread_ts": "1769167443.579889"
+    },
+    {
+      "user": "U08L3P3NBEZ",
+      "dm": "D0A7EFP9Y5P",
+      "question": "最近「学びになったな」と思ったことは？",
+      "thread_ts": "1769167444.117579"
     }
   ],
   "last_picked_users": [
-    "U08L3P3T9FF",
-    "U0521QF30GY",
-    "U06S6LA3F6G"
+    "U08L3NWS7U5",
+    "U06SGS14NHF",
+    "U08L3P3NBEZ"
   ]
 }
