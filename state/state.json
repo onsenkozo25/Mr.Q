@@ -264,11 +264,29 @@
       "dm": "D0A79GCD6JE",
       "question": "最近買ってよかったものは？",
       "thread_ts": "1769253607.424809"
+    },
+    {
+      "user": "U08L3P3LWDT",
+      "dm": "D0A763VS0KX",
+      "question": "最近「学びになったな」と思ったことは？",
+      "thread_ts": "1769340018.442099"
+    },
+    {
+      "user": "U04QQGXLE9X",
+      "dm": "D0A8HF16MD2",
+      "question": "今の作業BGMは？",
+      "thread_ts": "1769340018.648959"
+    },
+    {
+      "user": "U06SGS1KBKK",
+      "dm": "D0AB6S8QJQ1",
+      "question": "今週の自分をひと言で表すと？",
+      "thread_ts": "1769340018.922059"
     }
   ],
   "last_picked_users": [
-    "U04RX1N2QCV",
-    "U08L3P3ELTF",
-    "U06ST0E3XNC"
+    "U08L3P3LWDT",
+    "U04QQGXLE9X",
+    "U06SGS1KBKK"
   ]
 }
