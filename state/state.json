@@ -282,11 +282,29 @@
       "dm": "D0AB6S8QJQ1",
       "question": "今週の自分をひと言で表すと？",
       "thread_ts": "1769340018.922059"
+    },
+    {
+      "user": "U06S46NMA66",
+      "dm": "D0A8G1P2BJP",
+      "question": "今週の目標は？",
+      "thread_ts": "1769426621.322199"
+    },
+    {
+      "user": "U08L3NWS7U5",
+      "dm": "D0AA4TVSAUC",
+      "question": "好きな四字熟語は？",
+      "thread_ts": "1769426621.843539"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "今の作業BGMは？",
+      "thread_ts": "1769426622.512739"
     }
   ],
   "last_picked_users": [
-    "U08L3P3LWDT",
-    "U04QQGXLE9X",
-    "U06SGS1KBKK"
+    "U06S46NMA66",
+    "U08L3NWS7U5",
+    "U08L3P30NN9"
   ]
 }
