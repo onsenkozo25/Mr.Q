@@ -300,11 +300,29 @@
       "dm": "D0AB21CA01J",
       "question": "今の作業BGMは？",
       "thread_ts": "1769426622.512739"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1769513146.680249"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "今の気分を食べ物に例えると？",
+      "thread_ts": "1769513146.881819"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "子どもの頃好きだった遊びは？",
+      "thread_ts": "1769513147.075049"
     }
   ],
   "last_picked_users": [
-    "U06S46NMA66",
-    "U08L3NWS7U5",
-    "U08L3P30NN9"
+    "U08L3P2MTHT",
+    "U08L3P30NN9",
+    "U08L3NZUELV"
   ]
 }
