@@ -318,11 +318,29 @@
       "dm": "D0A7FNDHFNJ",
       "question": "子どもの頃好きだった遊びは？",
       "thread_ts": "1769513147.075049"
+    },
+    {
+      "user": "U06SGS15WKT",
+      "dm": "D0A6LLE6YM9",
+      "question": "今の気分を食べ物に例えると？",
+      "thread_ts": "1769599553.833369"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "計画立てるの得意？",
+      "thread_ts": "1769599554.305489"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "最近のマイブーム（食・運動・趣味なんでも）",
+      "thread_ts": "1769599554.703939"
     }
   ],
   "last_picked_users": [
-    "U08L3P2MTHT",
-    "U08L3P30NN9",
-    "U08L3NZUELV"
+    "U06SGS15WKT",
+    "U04RZRKCGPM",
+    "U08L3P38W5B"
   ]
 }
