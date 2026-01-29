@@ -336,11 +336,29 @@
       "dm": "D0A7W1VN5DL",
       "question": "最近のマイブーム（食・運動・趣味なんでも）",
       "thread_ts": "1769599554.703939"
+    },
+    {
+      "user": "U08L3P3A9MK",
+      "dm": "D0A813MAL8J",
+      "question": "最近買ってよかったものは？",
+      "thread_ts": "1769686444.979379"
+    },
+    {
+      "user": "U05K75QUXUP",
+      "dm": "D0A9TJPRX41",
+      "question": "今、誰かに感謝したいことは？",
+      "thread_ts": "1769686445.241089"
+    },
+    {
+      "user": "U04RTBHG71C",
+      "dm": "D0A7N20NQU8",
+      "question": "そろそろ克服したいことは？",
+      "thread_ts": "1769686445.436549"
     }
   ],
   "last_picked_users": [
-    "U06SGS15WKT",
-    "U04RZRKCGPM",
-    "U08L3P38W5B"
+    "U08L3P3A9MK",
+    "U05K75QUXUP",
+    "U04RTBHG71C"
   ]
 }
