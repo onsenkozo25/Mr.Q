@@ -354,11 +354,29 @@
       "dm": "D0A7N20NQU8",
       "question": "そろそろ克服したいことは？",
       "thread_ts": "1769686445.436549"
+    },
+    {
+      "user": "U05K75QUXUP",
+      "dm": "D0A9TJPRX41",
+      "question": "今の気分を食べ物に例えると？",
+      "thread_ts": "1769772666.124779"
+    },
+    {
+      "user": "U08L3NWS7U5",
+      "dm": "D0AA4TVSAUC",
+      "question": "最近買ってよかったものは？",
+      "thread_ts": "1769772666.766189"
+    },
+    {
+      "user": "U08L3P3A9MK",
+      "dm": "D0A813MAL8J",
+      "question": "最近「学びになったな」と思ったことは？",
+      "thread_ts": "1769772667.371379"
     }
   ],
   "last_picked_users": [
-    "U08L3P3A9MK",
     "U05K75QUXUP",
-    "U04RTBHG71C"
+    "U08L3NWS7U5",
+    "U08L3P3A9MK"
   ]
 }
