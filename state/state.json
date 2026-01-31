@@ -372,11 +372,29 @@
       "dm": "D0A813MAL8J",
       "question": "最近「学びになったな」と思ったことは？",
       "thread_ts": "1769772667.371379"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "今の作業BGMは？",
+      "thread_ts": "1769858579.606649"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "好きな四字熟語は？",
+      "thread_ts": "1769858579.892659"
+    },
+    {
+      "user": "U06SGS15WKT",
+      "dm": "D0A6LLE6YM9",
+      "question": "地元とその自慢を教えて！",
+      "thread_ts": "1769858580.153569"
     }
   ],
   "last_picked_users": [
-    "U05K75QUXUP",
-    "U08L3NWS7U5",
-    "U08L3P3A9MK"
+    "U06ST0E3XNC",
+    "U08L3P2MTHT",
+    "U06SGS15WKT"
   ]
 }
