@@ -390,11 +390,29 @@
       "dm": "D0A6LLE6YM9",
       "question": "地元とその自慢を教えて！",
       "thread_ts": "1769858580.153569"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "好きな色とそれにまつわるエピソード",
+      "thread_ts": "1769945056.247819"
+    },
+    {
+      "user": "U08L3P2H561",
+      "dm": "D0A6PK07FKP",
+      "question": "自分だけが知ってる、あの人の癖は？",
+      "thread_ts": "1769945056.851759"
+    },
+    {
+      "user": "U06SGS15WKT",
+      "dm": "D0A6LLE6YM9",
+      "question": "今、誰かに感謝したいことは？",
+      "thread_ts": "1769945057.404619"
     }
   ],
   "last_picked_users": [
-    "U06ST0E3XNC",
     "U08L3P2MTHT",
+    "U08L3P2H561",
     "U06SGS15WKT"
   ]
 }
