@@ -408,11 +408,29 @@
       "dm": "D0A6LLE6YM9",
       "question": "今、誰かに感謝したいことは？",
       "thread_ts": "1769945057.404619"
+    },
+    {
+      "user": "U08L3P47ZS9",
+      "dm": "D0A8VCU9M16",
+      "question": "最近のマイブーム（食・運動・趣味なんでも）",
+      "thread_ts": "1770032245.996259"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "いま一番やりたい小さなチャレンジは？",
+      "thread_ts": "1770032246.392499"
+    },
+    {
+      "user": "U06S4371MM1",
+      "dm": "D0A821ED5LM",
+      "question": "好きな色とそれにまつわるエピソード",
+      "thread_ts": "1770032246.784109"
     }
   ],
   "last_picked_users": [
-    "U08L3P2MTHT",
-    "U08L3P2H561",
-    "U06SGS15WKT"
+    "U08L3P47ZS9",
+    "U06ST0E3XNC",
+    "U06S4371MM1"
   ]
 }
