@@ -426,11 +426,29 @@
       "dm": "D0A821ED5LM",
       "question": "好きな色とそれにまつわるエピソード",
       "thread_ts": "1770032246.784109"
+    },
+    {
+      "user": "U08L3P40UER",
+      "dm": "D0ACLB328QN",
+      "question": "自分だけが知ってる、あの人の癖は？",
+      "thread_ts": "1770118593.385149"
+    },
+    {
+      "user": "U08L3P3LWDT",
+      "dm": "D0A763VS0KX",
+      "question": "ついついみちゃうタイプのショート動画は？",
+      "thread_ts": "1770118593.603469"
+    },
+    {
+      "user": "U08L3P47ZS9",
+      "dm": "D0A8VCU9M16",
+      "question": "最近「学びになったな」と思ったことは？",
+      "thread_ts": "1770118593.800959"
     }
   ],
   "last_picked_users": [
-    "U08L3P47ZS9",
-    "U06ST0E3XNC",
-    "U06S4371MM1"
+    "U08L3P40UER",
+    "U08L3P3LWDT",
+    "U08L3P47ZS9"
   ]
 }
