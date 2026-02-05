@@ -462,11 +462,29 @@
       "dm": "D0AB6S8QJQ1",
       "question": "地元とその自慢を教えて！",
       "thread_ts": "1770204922.643589"
+    },
+    {
+      "user": "U06S6LA3F6G",
+      "dm": "D0AB4CFA4HW",
+      "question": "今週の目標は？",
+      "thread_ts": "1770291425.960379"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "今週の自分をひと言で表すと？",
+      "thread_ts": "1770291426.216429"
+    },
+    {
+      "user": "U06S46NMA66",
+      "dm": "D0A8G1P2BJP",
+      "question": "いま一番やりたい小さなチャレンジは？",
+      "thread_ts": "1770291426.474959"
     }
   ],
   "last_picked_users": [
-    "U05K75QUXUP",
-    "U08L3P3T9FF",
-    "U06SGS1KBKK"
+    "U06S6LA3F6G",
+    "U06ST0DS4N4",
+    "U06S46NMA66"
   ]
 }
