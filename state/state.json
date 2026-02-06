@@ -480,11 +480,29 @@
       "dm": "D0A8G1P2BJP",
       "question": "いま一番やりたい小さなチャレンジは？",
       "thread_ts": "1770291426.474959"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "高専のお気に入りスポット",
+      "thread_ts": "1770377772.119439"
+    },
+    {
+      "user": "U08L3P3ELTF",
+      "dm": "D0A71HQGFNW",
+      "question": "今の気分を食べ物に例えると？",
+      "thread_ts": "1770377772.365339"
+    },
+    {
+      "user": "U05K75QUXUP",
+      "dm": "D0A9TJPRX41",
+      "question": "最近ハマってるものは？",
+      "thread_ts": "1770377772.593679"
     }
   ],
   "last_picked_users": [
-    "U06S6LA3F6G",
-    "U06ST0DS4N4",
-    "U06S46NMA66"
+    "U08L3P4571B",
+    "U08L3P3ELTF",
+    "U05K75QUXUP"
   ]
 }
