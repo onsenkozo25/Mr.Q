@@ -534,11 +534,29 @@
       "dm": "D0A7FNDHFNJ",
       "question": "今の気分を食べ物に例えると？",
       "thread_ts": "1770637678.422819"
+    },
+    {
+      "user": "U06ST0EKW9W",
+      "dm": "D0A81LEKCKW",
+      "question": "今週の“推し”は？（人でも物でも）",
+      "thread_ts": "1770724340.011999"
+    },
+    {
+      "user": "U0521QF30GY",
+      "dm": "D0A6RM8G59U",
+      "question": "今、誰かに感謝したいことは？",
+      "thread_ts": "1770724340.233739"
+    },
+    {
+      "user": "U06S437D0KD",
+      "dm": "D0A8SQSNN0H",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1770724340.524399"
     }
   ],
   "last_picked_users": [
-    "U08L3P47ZS9",
-    "U08L3P3NBEZ",
-    "U08L3NZUELV"
+    "U06ST0EKW9W",
+    "U0521QF30GY",
+    "U06S437D0KD"
   ]
 }
