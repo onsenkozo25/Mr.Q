@@ -552,11 +552,29 @@
       "dm": "D0A8SQSNN0H",
       "question": "今まで共感を得られなかったこと",
       "thread_ts": "1770724340.524399"
+    },
+    {
+      "user": "U08L3P3NBEZ",
+      "dm": "D0A7EFP9Y5P",
+      "question": "計画立てるの得意？",
+      "thread_ts": "1770810489.893839"
+    },
+    {
+      "user": "U08L3P3LWDT",
+      "dm": "D0A763VS0KX",
+      "question": "最近の小さな発見は？",
+      "thread_ts": "1770810490.454729"
+    },
+    {
+      "user": "U04QQGXLE9X",
+      "dm": "D0A8HF16MD2",
+      "question": "自分だけが知ってる、あの人の癖は？",
+      "thread_ts": "1770810491.011529"
     }
   ],
   "last_picked_users": [
-    "U06ST0EKW9W",
-    "U0521QF30GY",
-    "U06S437D0KD"
+    "U08L3P3NBEZ",
+    "U08L3P3LWDT",
+    "U04QQGXLE9X"
   ]
 }
