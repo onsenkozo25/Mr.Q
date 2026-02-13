@@ -588,11 +588,29 @@
       "dm": "D0A763VS0KX",
       "question": "最近うまくいった工夫は？",
       "thread_ts": "1770896516.468019"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "そろそろ克服したいことは？",
+      "thread_ts": "1770982385.001859"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "好きな食べ物とそれにまつわるエピソード",
+      "thread_ts": "1770982385.242289"
+    },
+    {
+      "user": "U08L3P3K2SZ",
+      "dm": "D0A7600EJCR",
+      "question": "見たらテンション下がるもの",
+      "thread_ts": "1770982385.462929"
     }
   ],
   "last_picked_users": [
+    "U04RX1N2QCV",
     "U08L3P4571B",
-    "U08L3P2MTHT",
-    "U08L3P3LWDT"
+    "U08L3P3K2SZ"
   ]
 }
