@@ -606,11 +606,29 @@
       "dm": "D0A7600EJCR",
       "question": "見たらテンション下がるもの",
       "thread_ts": "1770982385.462929"
+    },
+    {
+      "user": "U08L3P3T9FF",
+      "dm": "D0A89275R52",
+      "question": "最近笑ったことは？",
+      "thread_ts": "1771068295.699369"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1771068296.329199"
+    },
+    {
+      "user": "U08L3P3K2SZ",
+      "dm": "D0A7600EJCR",
+      "question": "最近うまくいった工夫は？",
+      "thread_ts": "1771068296.941349"
     }
   ],
   "last_picked_users": [
-    "U04RX1N2QCV",
-    "U08L3P4571B",
+    "U08L3P3T9FF",
+    "U08L3P30NN9",
     "U08L3P3K2SZ"
   ]
 }
