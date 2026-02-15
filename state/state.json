@@ -624,11 +624,29 @@
       "dm": "D0A7600EJCR",
       "question": "最近うまくいった工夫は？",
       "thread_ts": "1771068296.941349"
+    },
+    {
+      "user": "U08L3P3ELTF",
+      "dm": "D0A71HQGFNW",
+      "question": "最近買ってよかったものは？",
+      "thread_ts": "1771154690.999089"
+    },
+    {
+      "user": "U08L3P47ZS9",
+      "dm": "D0A8VCU9M16",
+      "question": "最近のマイブーム（食・運動・趣味なんでも）",
+      "thread_ts": "1771154691.220829"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1771154691.484559"
     }
   ],
   "last_picked_users": [
-    "U08L3P3T9FF",
-    "U08L3P30NN9",
-    "U08L3P3K2SZ"
+    "U08L3P3ELTF",
+    "U08L3P47ZS9",
+    "U04RZRKCGPM"
   ]
 }
