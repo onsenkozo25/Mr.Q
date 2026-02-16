@@ -642,11 +642,29 @@
       "dm": "D0A76L4SH3K",
       "question": "今まで共感を得られなかったこと",
       "thread_ts": "1771154691.484559"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "最近笑ったことは？",
+      "thread_ts": "1771242104.309049"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "見たらテンション下がるもの",
+      "thread_ts": "1771242104.580269"
+    },
+    {
+      "user": "U04RTBHG71C",
+      "dm": "D0A7N20NQU8",
+      "question": "地元とその自慢を教えて！",
+      "thread_ts": "1771242104.979289"
     }
   ],
   "last_picked_users": [
-    "U08L3P3ELTF",
-    "U08L3P47ZS9",
-    "U04RZRKCGPM"
+    "U04RZRKCGPM",
+    "U04RX1N2QCV",
+    "U04RTBHG71C"
   ]
 }
