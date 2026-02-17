@@ -660,11 +660,29 @@
       "dm": "D0A7N20NQU8",
       "question": "地元とその自慢を教えて！",
       "thread_ts": "1771242104.979289"
+    },
+    {
+      "user": "U06S6LA3F6G",
+      "dm": "D0AB4CFA4HW",
+      "question": "最近気づいた自分の特技",
+      "thread_ts": "1771328459.818299"
+    },
+    {
+      "user": "U08L3P3NBEZ",
+      "dm": "D0A7EFP9Y5P",
+      "question": "地元とその自慢を教えて！",
+      "thread_ts": "1771328460.429019"
+    },
+    {
+      "user": "U06SGS15WKT",
+      "dm": "D0A6LLE6YM9",
+      "question": "今週の自分をひと言で表すと？",
+      "thread_ts": "1771328461.013699"
     }
   ],
   "last_picked_users": [
-    "U04RZRKCGPM",
-    "U04RX1N2QCV",
-    "U04RTBHG71C"
+    "U06S6LA3F6G",
+    "U08L3P3NBEZ",
+    "U06SGS15WKT"
   ]
 }
