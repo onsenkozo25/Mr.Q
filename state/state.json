@@ -678,11 +678,29 @@
       "dm": "D0A6LLE6YM9",
       "question": "今週の自分をひと言で表すと？",
       "thread_ts": "1771328461.013699"
+    },
+    {
+      "user": "U08L3NWS7U5",
+      "dm": "D0AA4TVSAUC",
+      "question": "みんなにおすすめしたいけど、独り占めしたい気もする曲は？",
+      "thread_ts": "1771414840.763239"
+    },
+    {
+      "user": "U06S4371MM1",
+      "dm": "D0A821ED5LM",
+      "question": "最近うまくいった工夫は？",
+      "thread_ts": "1771414841.272109"
+    },
+    {
+      "user": "U08L3P3A9MK",
+      "dm": "D0A813MAL8J",
+      "question": "好きな色とそれにまつわるエピソード",
+      "thread_ts": "1771414841.792599"
     }
   ],
   "last_picked_users": [
-    "U06S6LA3F6G",
-    "U08L3P3NBEZ",
-    "U06SGS15WKT"
+    "U08L3NWS7U5",
+    "U06S4371MM1",
+    "U08L3P3A9MK"
   ]
 }
