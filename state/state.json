@@ -696,11 +696,29 @@
       "dm": "D0A813MAL8J",
       "question": "好きな色とそれにまつわるエピソード",
       "thread_ts": "1771414841.792599"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "今週いちばん嬉しかったことは？",
+      "thread_ts": "1771501190.332049"
+    },
+    {
+      "user": "U04QQGXLE9X",
+      "dm": "D0A8HF16MD2",
+      "question": "好きな食べ物とそれにまつわるエピソード",
+      "thread_ts": "1771501190.762169"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "見たらテンション下がるもの",
+      "thread_ts": "1771501191.214929"
     }
   ],
   "last_picked_users": [
-    "U08L3NWS7U5",
-    "U06S4371MM1",
-    "U08L3P3A9MK"
+    "U08L3P38W5B",
+    "U04QQGXLE9X",
+    "U04RX1N2QCV"
   ]
 }
