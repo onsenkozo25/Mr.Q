@@ -732,11 +732,29 @@
       "dm": "D0A7N20NQU8",
       "question": "今、誰かに感謝したいことは？",
       "thread_ts": "1771587297.869559"
+    },
+    {
+      "user": "U04SCJCFCSD",
+      "dm": "D0A763W523X",
+      "question": "今、誰かに感謝したいことは？",
+      "thread_ts": "1771673095.407749"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "いま一番やりたい小さなチャレンジは？",
+      "thread_ts": "1771673095.934679"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "みんなにおすすめしたいけど、独り占めしたい気もする曲は？",
+      "thread_ts": "1771673096.462899"
     }
   ],
   "last_picked_users": [
-    "U08L3P38W5B",
-    "U06S4371MM1",
-    "U04RTBHG71C"
+    "U04SCJCFCSD",
+    "U08L3P2MTHT",
+    "U06ST0DS4N4"
   ]
 }
