@@ -750,11 +750,29 @@
       "dm": "D0A71HQA0US",
       "question": "みんなにおすすめしたいけど、独り占めしたい気もする曲は？",
       "thread_ts": "1771673096.462899"
+    },
+    {
+      "user": "U08L3P3A9MK",
+      "dm": "D0A813MAL8J",
+      "question": "好きな色とそれにまつわるエピソード",
+      "thread_ts": "1771759481.478309"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "好きな食べ物とそれにまつわるエピソード",
+      "thread_ts": "1771759481.832359"
+    },
+    {
+      "user": "U08L3P3FYKF",
+      "dm": "D0AADSQ08M6",
+      "question": "最近うまくいった工夫は？",
+      "thread_ts": "1771759482.227679"
     }
   ],
   "last_picked_users": [
-    "U04SCJCFCSD",
-    "U08L3P2MTHT",
-    "U06ST0DS4N4"
+    "U08L3P3A9MK",
+    "U08L3P4571B",
+    "U08L3P3FYKF"
   ]
 }
