@@ -768,11 +768,29 @@
       "dm": "D0AADSQ08M6",
       "question": "最近うまくいった工夫は？",
       "thread_ts": "1771759482.227679"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "見たらテンション下がるもの",
+      "thread_ts": "1771846886.158229"
+    },
+    {
+      "user": "U08L3P47ZS9",
+      "dm": "D0A8VCU9M16",
+      "question": "最近ちょっと困ってること（軽めで）ある？",
+      "thread_ts": "1771846886.673769"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "高専のお気に入りスポット",
+      "thread_ts": "1771846887.190359"
     }
   ],
   "last_picked_users": [
-    "U08L3P3A9MK",
-    "U08L3P4571B",
-    "U08L3P3FYKF"
+    "U08L3NZUELV",
+    "U08L3P47ZS9",
+    "U08L3P30NN9"
   ]
 }
