@@ -804,11 +804,29 @@
       "dm": "D0AB21CA01J",
       "question": "今まで共感を得られなかったこと",
       "thread_ts": "1771933331.407829"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "見たらテンション下がるもの",
+      "thread_ts": "1772019703.140299"
+    },
+    {
+      "user": "U06SGS1KBKK",
+      "dm": "D0AB6S8QJQ1",
+      "question": "今の気分を食べ物に例えると？",
+      "thread_ts": "1772019703.340439"
+    },
+    {
+      "user": "U0521QF30GY",
+      "dm": "D0A6RM8G59U",
+      "question": "好きな四字熟語は？",
+      "thread_ts": "1772019703.573089"
     }
   ],
   "last_picked_users": [
-    "U08L3P2H561",
+    "U04RZRKCGPM",
     "U06SGS1KBKK",
-    "U08L3P30NN9"
+    "U0521QF30GY"
   ]
 }
