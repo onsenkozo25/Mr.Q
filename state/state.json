@@ -822,11 +822,29 @@
       "dm": "D0A6RM8G59U",
       "question": "好きな四字熟語は？",
       "thread_ts": "1772019703.573089"
+    },
+    {
+      "user": "U08L3P3T9FF",
+      "dm": "D0A89275R52",
+      "question": "最近の小さな発見は？",
+      "thread_ts": "1772106085.685439"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "ついついみちゃうタイプのショート動画は？",
+      "thread_ts": "1772106085.955859"
+    },
+    {
+      "user": "U08L3P2H561",
+      "dm": "D0A6PK07FKP",
+      "question": "最近うまくいった工夫は？",
+      "thread_ts": "1772106086.222379"
     }
   ],
   "last_picked_users": [
-    "U04RZRKCGPM",
-    "U06SGS1KBKK",
-    "U0521QF30GY"
+    "U08L3P3T9FF",
+    "U08L3NZUELV",
+    "U08L3P2H561"
   ]
 }
