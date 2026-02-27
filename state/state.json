@@ -840,11 +840,29 @@
       "dm": "D0A6PK07FKP",
       "question": "最近うまくいった工夫は？",
       "thread_ts": "1772106086.222379"
+    },
+    {
+      "user": "U08L3P2H561",
+      "dm": "D0A6PK07FKP",
+      "question": "最近読んだ/見たものでおすすめある？",
+      "thread_ts": "1772192079.526729"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "最近笑ったことは？",
+      "thread_ts": "1772192079.825219"
+    },
+    {
+      "user": "U08L3P3T9FF",
+      "dm": "D0A89275R52",
+      "question": "最近気づいた自分の特技",
+      "thread_ts": "1772192080.036349"
     }
   ],
   "last_picked_users": [
-    "U08L3P3T9FF",
-    "U08L3NZUELV",
-    "U08L3P2H561"
+    "U08L3P2H561",
+    "U06ST0E3XNC",
+    "U08L3P3T9FF"
   ]
 }
