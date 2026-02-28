@@ -858,11 +858,29 @@
       "dm": "D0A89275R52",
       "question": "最近気づいた自分の特技",
       "thread_ts": "1772192080.036349"
+    },
+    {
+      "user": "U08L3P3T9FF",
+      "dm": "D0A89275R52",
+      "question": "見たらテンション上がるもの",
+      "thread_ts": "1772277755.032559"
+    },
+    {
+      "user": "U04RTBHG71C",
+      "dm": "D0A7N20NQU8",
+      "question": "最近の小さな発見は？",
+      "thread_ts": "1772277755.546729"
+    },
+    {
+      "user": "U04QQGXLE9X",
+      "dm": "D0A8HF16MD2",
+      "question": "最近読んだ/見たものでおすすめある？",
+      "thread_ts": "1772277756.001229"
     }
   ],
   "last_picked_users": [
-    "U08L3P2H561",
-    "U06ST0E3XNC",
-    "U08L3P3T9FF"
+    "U08L3P3T9FF",
+    "U04RTBHG71C",
+    "U04QQGXLE9X"
   ]
 }
