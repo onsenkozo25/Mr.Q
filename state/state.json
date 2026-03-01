@@ -876,11 +876,29 @@
       "dm": "D0A8HF16MD2",
       "question": "最近読んだ/見たものでおすすめある？",
       "thread_ts": "1772277756.001229"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "そろそろ克服したいことは？",
+      "thread_ts": "1772364166.526799"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "今まで共感を得られなかったこと",
+      "thread_ts": "1772364166.771169"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "見たらテンション上がるもの",
+      "thread_ts": "1772364167.064679"
     }
   ],
   "last_picked_users": [
-    "U08L3P3T9FF",
-    "U04RTBHG71C",
-    "U04QQGXLE9X"
+    "U08L3P30NN9",
+    "U08L3P38W5B",
+    "U08L3NZUELV"
   ]
 }
