@@ -912,11 +912,29 @@
       "dm": "D0A6RM8G59U",
       "question": "計画立てるの得意？",
       "thread_ts": "1772451197.986839"
+    },
+    {
+      "user": "U05K75QUXUP",
+      "dm": "D0A9TJPRX41",
+      "question": "最近ちょっと困ってること（軽めで）ある？",
+      "thread_ts": "1772537690.625309"
+    },
+    {
+      "user": "U06ST0EKW9W",
+      "dm": "D0A81LEKCKW",
+      "question": "そろそろ克服したいことは？",
+      "thread_ts": "1772537690.984259"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "子どもの頃好きだった遊びは？",
+      "thread_ts": "1772537691.186289"
     }
   ],
   "last_picked_users": [
-    "U06S6LA3F6G",
-    "U04RX1N2QCV",
-    "U0521QF30GY"
+    "U05K75QUXUP",
+    "U06ST0EKW9W",
+    "U06ST0E3XNC"
   ]
 }
