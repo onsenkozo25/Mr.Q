@@ -966,11 +966,29 @@
       "dm": "D0AB6S8QJQ1",
       "question": "今週の“推し”は？（人でも物でも）",
       "thread_ts": "1772796715.995509"
+    },
+    {
+      "user": "U08L3P47ZS9",
+      "dm": "D0A8VCU9M16",
+      "question": "最近ちょっと困ってること（軽めで）ある？",
+      "thread_ts": "1772882563.973269"
+    },
+    {
+      "user": "U06SGS15WKT",
+      "dm": "D0A6LLE6YM9",
+      "question": "今の気分を食べ物に例えると？",
+      "thread_ts": "1772882564.505519"
+    },
+    {
+      "user": "U06SGS14NHF",
+      "dm": "D0A7MBJMJ4C",
+      "question": "今週いちばん嬉しかったことは？",
+      "thread_ts": "1772882565.043379"
     }
   ],
   "last_picked_users": [
-    "U04QQGXLE9X",
-    "U08L3P38W5B",
-    "U06SGS1KBKK"
+    "U08L3P47ZS9",
+    "U06SGS15WKT",
+    "U06SGS14NHF"
   ]
 }
