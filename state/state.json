@@ -984,11 +984,29 @@
       "dm": "D0A7MBJMJ4C",
       "question": "今週いちばん嬉しかったことは？",
       "thread_ts": "1772882565.043379"
+    },
+    {
+      "user": "U08L3P4BKMK",
+      "dm": "D0A7HPDTXUJ",
+      "question": "最近のマイブーム（食・運動・趣味なんでも）",
+      "thread_ts": "1772969054.395889"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "今、誰かに感謝したいことは？",
+      "thread_ts": "1772969054.889209"
+    },
+    {
+      "user": "U04RTBHG71C",
+      "dm": "D0A7N20NQU8",
+      "question": "見たらテンション下がるもの",
+      "thread_ts": "1772969055.391949"
     }
   ],
   "last_picked_users": [
-    "U08L3P47ZS9",
-    "U06SGS15WKT",
-    "U06SGS14NHF"
+    "U08L3P4BKMK",
+    "U06ST0DS4N4",
+    "U04RTBHG71C"
   ]
 }
