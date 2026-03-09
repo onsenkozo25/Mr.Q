@@ -4,7 +4,6 @@ import requests
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-
 TOKEN = os.environ.get("SLACK_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")
 STATE_PATH = "state/state.json"
@@ -29,29 +28,6 @@ def slack_get(method: str, params: dict):
     if not data.get("ok"):
         raise RuntimeError(f"{method} failed: {data}")
     return data
-def today_key_jst():
-    return datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y-%m-%d")
-
-def ensure_daily_thread(state: dict) -> str:
-    """
-    その日の「今日のQuestion」親投稿(ts)を返す。
-    なければ作って state に保存する。
-    """
-    day = today_key_jst()
-    threads = state.setdefault("daily_threads", {})
-
-    # 既に今日の親があればそれを使う
-    if day in threads and threads[day].get("thread_ts"):
-        return threads[day]["thread_ts"]
-
-    # なければ作成
-    text = f"📌 *今日のQuestion*（{day}）\nこのスレッドに、今日集まった回答をまとめます。"
-    msg = slack_post("chat.postMessage", {"channel": CHANNEL_ID, "text": text})
-    thread_ts = msg["ts"]
-
-    threads[day] = {"thread_ts": thread_ts}
-    save_state(state)
-    return thread_ts
 
 
 def slack_post(method: str, payload: dict):
@@ -78,25 +54,51 @@ def save_state(state):
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 
+def today_key_jst():
+    return datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y-%m-%d")
+
+
+def ensure_daily_parent_post(state: dict) -> str:
+    """
+    その日の親投稿（今日のQuestion）の thread_ts を返す。
+    なければチャンネルに作成して state に保存する。
+    """
+    day = today_key_jst()
+    daily_threads = state.setdefault("daily_threads", {})
+
+    if day in daily_threads and daily_threads[day].get("thread_ts"):
+        return daily_threads[day]["thread_ts"]
+
+    text = f"📌 今日のQuestion（{day}）\nこのスレッドに今日の回答をまとめます。"
+    msg = slack_post(
+        "chat.postMessage",
+        {
+            "channel": CHANNEL_ID,
+            "text": text,
+        },
+    )
+    thread_ts = msg["ts"]
+    daily_threads[day] = {"thread_ts": thread_ts}
+    save_state(state)
+    return thread_ts
+
+
 def get_user_icon(user_id: str):
-    # users:read が必要（あなたは既に付与済みのはず）
     info = slack_get("users.info", {"user": user_id})
     profile = info.get("user", {}).get("profile", {})
     return profile.get("image_192") or profile.get("image_72") or profile.get("image_512")
 
 
-
 def find_reply(dm_id: str, user_id: str, thread_ts: str):
     """
-    DMの「スレッド返信」でユーザー回答を受け取る前提。
-    thread_ts は botが送った質問メッセージの ts（=スレッド親）。
+    DMの質問メッセージに対するスレッド返信のみ拾う。
     """
     res = slack_get(
         "conversations.replies",
         {"channel": dm_id, "ts": str(thread_ts), "limit": 200},
     )
 
-    # messages[0] が親（質問）。messages[1:] が返信。
+    # messages[0] が親（質問）
     for m in res.get("messages", [])[1:]:
         if m.get("user") == user_id and m.get("text"):
             return m["text"]
@@ -104,10 +106,9 @@ def find_reply(dm_id: str, user_id: str, thread_ts: str):
     return None
 
 
-def post_pretty(channel_id: str, thread_ts: str, question: str, answerer_user_id: str, answer_text: str):
+def post_answer_in_thread(parent_thread_ts: str, question: str, answerer_user_id: str, answer_text: str):
     icon_url = get_user_icon(answerer_user_id)
 
-    # スレッド返信では header より section の方が読みやすいので sectionにする
     blocks = [
         {
             "type": "section",
@@ -132,12 +133,15 @@ def post_pretty(channel_id: str, thread_ts: str, question: str, answerer_user_id
         "text": {"type": "mrkdwn", "text": f"> {quoted_answer}"}
     })
 
-    slack_post("chat.postMessage", {
-        "channel": channel_id,
-        "thread_ts": thread_ts,  # ← ここが重要（スレッドに返信）
-        "text": f"Q: {question} / <@{answerer_user_id}> の回答",
-        "blocks": blocks
-    })
+    slack_post(
+        "chat.postMessage",
+        {
+            "channel": CHANNEL_ID,
+            "thread_ts": parent_thread_ts,
+            "text": f"Q: {question} / <@{answerer_user_id}> の回答",
+            "blocks": blocks,
+        },
+    )
 
 
 def main():
@@ -150,8 +154,8 @@ def main():
         print("No pending.")
         return
 
-    daily_thread_ts = ensure_daily_thread(state)
     new_pending = []
+    parent_thread_ts = None
 
     for p in pending:
         user = p["user"]
@@ -170,11 +174,18 @@ def main():
         print("answer found:", bool(answer))
 
         if answer:
-            post_pretty(CHANNEL_ID, daily_thread_ts, q, user, answer)
-            print("posted to channel")
+            if parent_thread_ts is None:
+                parent_thread_ts = ensure_daily_parent_post(state)
+
+            post_answer_in_thread(parent_thread_ts, q, user, answer)
+            print("posted to parent thread")
         else:
             new_pending.append(p)
 
     state["pending"] = new_pending
     save_state(state)
     print("done")
+
+
+if __name__ == "__main__":
+    main()
