@@ -7,12 +7,6 @@
       "thread_ts": "1773059947.392479"
     },
     {
-      "user": "U04RTBG352A",
-      "dm": "D0A6YE7ARNV",
-      "question": "今週の自分をひと言で表すと？",
-      "thread_ts": "1773059947.767849"
-    },
-    {
       "user": "U04RX1NMFNZ",
       "dm": "D0A6DEY4R5Z",
       "question": "最近のマイブーム（食・運動・趣味なんでも）",
@@ -24,5 +18,9 @@
     "U04RTBG352A",
     "U04RX1NMFNZ"
   ],
-  "daily_threads": {}
+  "daily_threads": {
+    "2026-03-09": {
+      "thread_ts": "1773060018.732349"
+    }
+  }
 }
