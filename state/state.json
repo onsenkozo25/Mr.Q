@@ -1,5 +1,28 @@
 {
-  "pending": [],
-  "last_picked_users": [],
+  "pending": [
+    {
+      "user": "U04RZRJ056X",
+      "dm": "D0A6DAFFA03",
+      "question": "最近ハマってるものは？",
+      "thread_ts": "1773059947.392479"
+    },
+    {
+      "user": "U04RTBG352A",
+      "dm": "D0A6YE7ARNV",
+      "question": "今週の自分をひと言で表すと？",
+      "thread_ts": "1773059947.767849"
+    },
+    {
+      "user": "U04RX1NMFNZ",
+      "dm": "D0A6DEY4R5Z",
+      "question": "最近のマイブーム（食・運動・趣味なんでも）",
+      "thread_ts": "1773059947.988259"
+    }
+  ],
+  "last_picked_users": [
+    "U04RZRJ056X",
+    "U04RTBG352A",
+    "U04RX1NMFNZ"
+  ],
   "daily_threads": {}
 }
