@@ -69,7 +69,7 @@ def ensure_daily_parent_post(state: dict) -> str:
     if day in daily_threads and daily_threads[day].get("thread_ts"):
         return daily_threads[day]["thread_ts"]
 
-    text = f"📌 今日のQuestion（{day}）\nこのスレッドに今日の回答をまとめます。"
+    text = f"📌 今日のQuestion\nこのスレッドに今日の回答をまとめたぞ"
     msg = slack_post(
         "chat.postMessage",
         {
