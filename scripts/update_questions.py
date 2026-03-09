@@ -7,6 +7,8 @@ SHEET_URL = "https://docs.google.com/spreadsheets/d/1zZQZcpqE5wGdx3kET5X3TjNKJcs
 r = requests.get(SHEET_URL)
 r.raise_for_status()
 
+r.encoding = "utf-8"
+
 lines = r.text.splitlines()
 reader = csv.reader(lines)
 
