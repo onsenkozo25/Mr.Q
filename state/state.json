@@ -29,10 +29,30 @@
       "dm": "D0A6DAFFA03",
       "question": "ä»æ¥ãã¤ã£ã¨ãããã¨",
       "thread_ts": "1773061430.252019"
+    },
+    {
+      "user": "U04RZRJ056X",
+      "dm": "D0A6DAFFA03",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1773061921.839529"
+    },
+    {
+      "user": "U04RX1NMFNZ",
+      "dm": "D0A6DEY4R5Z",
+      "question": "卒業記念で食べたいもの",
+      "thread_ts": "1773061922.352359"
+    },
+    {
+      "user": "U04RTBG352A",
+      "dm": "D0A6YE7ARNV",
+      "question": "今日ヒヤっとしたこと",
+      "thread_ts": "1773061922.877489"
     }
   ],
   "last_picked_users": [
-    "U04RZRJ056X"
+    "U04RZRJ056X",
+    "U04RX1NMFNZ",
+    "U04RTBG352A"
   ],
   "daily_threads": {
     "2026-03-09": {
