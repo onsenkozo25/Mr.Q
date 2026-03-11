@@ -35,12 +35,30 @@
       "dm": "D0A7FNDHFNJ",
       "question": "そこそこ得意なこととそこそこ苦手なこと",
       "thread_ts": "1773142501.520429"
+    },
+    {
+      "user": "U04QQGXLE9X",
+      "dm": "D0A8HF16MD2",
+      "question": "みたらテンション上がるもの",
+      "thread_ts": "1773228922.306359"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "最近の睡眠事情",
+      "thread_ts": "1773228922.734389"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1773228923.081999"
     }
   ],
   "last_picked_users": [
+    "U04QQGXLE9X",
     "U08L3NZUELV",
-    "U06SGS1KBKK",
-    "U06S46NMA66"
+    "U08L3P38W5B"
   ],
   "daily_threads": {
     "2026-03-09": {
