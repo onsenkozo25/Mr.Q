@@ -47,12 +47,30 @@
       "dm": "D0A7W1VN5DL",
       "question": "子供の頃勘違いしてたこと",
       "thread_ts": "1773228923.081999"
+    },
+    {
+      "user": "U08L3P3FYKF",
+      "dm": "D0AADSQ08M6",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1773315215.960829"
+    },
+    {
+      "user": "U04RTBG352A",
+      "dm": "D0A6YE7ARNV",
+      "question": "みたらテンション上がるもの",
+      "thread_ts": "1773315216.270309"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "今日頑張ったこと",
+      "thread_ts": "1773315216.553659"
     }
   ],
   "last_picked_users": [
-    "U04QQGXLE9X",
-    "U08L3NZUELV",
-    "U08L3P38W5B"
+    "U08L3P3FYKF",
+    "U04RTBG352A",
+    "U04RZRKCGPM"
   ],
   "daily_threads": {
     "2026-03-09": {
