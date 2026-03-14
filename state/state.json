@@ -65,12 +65,30 @@
       "dm": "D0A76L4SH3K",
       "question": "今日頑張ったこと",
       "thread_ts": "1773315216.553659"
+    },
+    {
+      "user": "U04RTBG352A",
+      "dm": "D0A6YE7ARNV",
+      "question": "今日頑張ったこと",
+      "thread_ts": "1773487601.821889"
+    },
+    {
+      "user": "U08L3NWS7U5",
+      "dm": "D0AA4TVSAUC",
+      "question": "自分の体で気に入ってるところ",
+      "thread_ts": "1773487602.080839"
+    },
+    {
+      "user": "U08L3P47ZS9",
+      "dm": "D0A8VCU9M16",
+      "question": "健康に気を遣えてますか？",
+      "thread_ts": "1773487602.338809"
     }
   ],
   "last_picked_users": [
-    "U08L3P3FYKF",
     "U04RTBG352A",
-    "U04RZRKCGPM"
+    "U08L3NWS7U5",
+    "U08L3P47ZS9"
   ],
   "daily_threads": {
     "2026-03-09": {
