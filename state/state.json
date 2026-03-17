@@ -77,12 +77,30 @@
       "dm": "D0AA4TVSAUC",
       "question": "自分の体で気に入ってるところ",
       "thread_ts": "1773487602.080839"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "最近の睡眠事情",
+      "thread_ts": "1773747840.040799"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "そこそこ得意なこととそこそこ苦手なこと",
+      "thread_ts": "1773747840.329809"
+    },
+    {
+      "user": "U08L3P3FYKF",
+      "dm": "D0AADSQ08M6",
+      "question": "流石に譲れない趣味",
+      "thread_ts": "1773747840.584269"
     }
   ],
   "last_picked_users": [
-    "U08L3P3LWDT",
-    "U06RXHDG4JJ",
-    "U06ST0E3XNC"
+    "U06ST0E3XNC",
+    "U08L3P38W5B",
+    "U08L3P3FYKF"
   ],
   "daily_threads": {
     "2026-03-09": {
