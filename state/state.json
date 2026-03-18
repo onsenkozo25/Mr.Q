@@ -89,12 +89,30 @@
       "dm": "D0AADSQ08M6",
       "question": "流石に譲れない趣味",
       "thread_ts": "1773747840.584269"
+    },
+    {
+      "user": "U08L3P47ZS9",
+      "dm": "D0A8VCU9M16",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1773834494.235299"
+    },
+    {
+      "user": "U06S4371MM1",
+      "dm": "D0A821ED5LM",
+      "question": "最近の睡眠事情",
+      "thread_ts": "1773834494.720909"
+    },
+    {
+      "user": "U06SGS1KBKK",
+      "dm": "D0AB6S8QJQ1",
+      "question": "みたらテンション上がるもの",
+      "thread_ts": "1773834495.204369"
     }
   ],
   "last_picked_users": [
-    "U06ST0E3XNC",
-    "U08L3P38W5B",
-    "U08L3P3FYKF"
+    "U08L3P47ZS9",
+    "U06S4371MM1",
+    "U06SGS1KBKK"
   ],
   "daily_threads": {
     "2026-03-09": {
