@@ -95,12 +95,30 @@
       "dm": "D0A821ED5LM",
       "question": "最近の睡眠事情",
       "thread_ts": "1773834494.720909"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "行ってみたい国とその理由",
+      "thread_ts": "1774006444.654739"
+    },
+    {
+      "user": "U05K75QUXUP",
+      "dm": "D0A9TJPRX41",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1774006445.391539"
+    },
+    {
+      "user": "U06SGS15WKT",
+      "dm": "D0A6LLE6YM9",
+      "question": "そこそこ得意なこととそこそこ苦手なこと",
+      "thread_ts": "1774006446.130829"
     }
   ],
   "last_picked_users": [
-    "U08L3P47ZS9",
-    "U06S4371MM1",
-    "U06SGS1KBKK"
+    "U04RZRKCGPM",
+    "U05K75QUXUP",
+    "U06SGS15WKT"
   ],
   "daily_threads": {
     "2026-03-09": {
