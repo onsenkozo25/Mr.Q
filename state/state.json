@@ -113,12 +113,30 @@
       "dm": "D0A6LLE6YM9",
       "question": "そこそこ得意なこととそこそこ苦手なこと",
       "thread_ts": "1774006446.130829"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1774092373.638489"
+    },
+    {
+      "user": "U08L3P3FYKF",
+      "dm": "D0AADSQ08M6",
+      "question": "最近の睡眠事情",
+      "thread_ts": "1774092374.150389"
+    },
+    {
+      "user": "U08L3P4BKMK",
+      "dm": "D0A7HPDTXUJ",
+      "question": "今日頑張ったこと",
+      "thread_ts": "1774092374.700059"
     }
   ],
   "last_picked_users": [
-    "U04RZRKCGPM",
-    "U05K75QUXUP",
-    "U06SGS15WKT"
+    "U08L3P30NN9",
+    "U08L3P3FYKF",
+    "U08L3P4BKMK"
   ],
   "daily_threads": {
     "2026-03-09": {
