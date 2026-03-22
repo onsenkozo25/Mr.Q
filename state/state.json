@@ -131,12 +131,30 @@
       "dm": "D0A7HPDTXUJ",
       "question": "今日頑張ったこと",
       "thread_ts": "1774092374.700059"
+    },
+    {
+      "user": "U06ST0EKW9W",
+      "dm": "D0A81LEKCKW",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1774178796.924779"
+    },
+    {
+      "user": "U08L3P2H561",
+      "dm": "D0A6PK07FKP",
+      "question": "最近の睡眠事情",
+      "thread_ts": "1774178797.132359"
+    },
+    {
+      "user": "U06S437D0KD",
+      "dm": "D0A8SQSNN0H",
+      "question": "お小遣いあげたいメンバーは？",
+      "thread_ts": "1774178797.383189"
     }
   ],
   "last_picked_users": [
-    "U08L3P30NN9",
-    "U08L3P3FYKF",
-    "U08L3P4BKMK"
+    "U06ST0EKW9W",
+    "U08L3P2H561",
+    "U06S437D0KD"
   ],
   "daily_threads": {
     "2026-03-09": {
