@@ -143,12 +143,30 @@
       "dm": "D0A6PK07FKP",
       "question": "最近の睡眠事情",
       "thread_ts": "1774178797.132359"
+    },
+    {
+      "user": "U06S4371MM1",
+      "dm": "D0A821ED5LM",
+      "question": "自分の体で気に入ってるところ",
+      "thread_ts": "1774266380.839469"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1774266381.031109"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "行ってみたい国とその理由",
+      "thread_ts": "1774266381.245379"
     }
   ],
   "last_picked_users": [
-    "U06ST0EKW9W",
-    "U08L3P2H561",
-    "U06S437D0KD"
+    "U06S4371MM1",
+    "U04RX1N2QCV",
+    "U06ST0DS4N4"
   ],
   "daily_threads": {
     "2026-03-09": {
