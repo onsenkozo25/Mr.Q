@@ -161,12 +161,30 @@
       "dm": "D0A71HQA0US",
       "question": "行ってみたい国とその理由",
       "thread_ts": "1774266381.245379"
+    },
+    {
+      "user": "U04RTBHG71C",
+      "dm": "D0A7N20NQU8",
+      "question": "みたらテンション上がるもの",
+      "thread_ts": "1774352816.317359"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "今日ヒヤっとしたこと",
+      "thread_ts": "1774352816.545799"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "卒業記念で食べたいもの",
+      "thread_ts": "1774352816.746839"
     }
   ],
   "last_picked_users": [
-    "U06S4371MM1",
-    "U04RX1N2QCV",
-    "U06ST0DS4N4"
+    "U04RTBHG71C",
+    "U06ST0DS4N4",
+    "U04RX1N2QCV"
   ],
   "daily_threads": {
     "2026-03-09": {
