@@ -191,12 +191,30 @@
       "dm": "D0A9TJPRX41",
       "question": "代表の好物はなんでしょうか",
       "thread_ts": "1774439023.543649"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1774525944.736839"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "きのこたけのこ、どっち？",
+      "thread_ts": "1774525944.990799"
+    },
+    {
+      "user": "U06S6LA3F6G",
+      "dm": "D0AB4CFA4HW",
+      "question": "今日ヒヤっとしたこと",
+      "thread_ts": "1774525945.217489"
     }
   ],
   "last_picked_users": [
-    "U08L3P3T9FF",
-    "U06SGS14NHF",
-    "U05K75QUXUP"
+    "U08L3P4571B",
+    "U04RX1N2QCV",
+    "U06S6LA3F6G"
   ],
   "daily_threads": {
     "2026-03-09": {
