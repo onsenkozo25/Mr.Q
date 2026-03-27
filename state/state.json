@@ -197,12 +197,30 @@
       "dm": "D0A6KC57Y13",
       "question": "一週間休みがあったら何する？",
       "thread_ts": "1774525944.736839"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "最近の睡眠事情",
+      "thread_ts": "1774611760.099749"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1774611760.274289"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1774611760.464669"
     }
   ],
   "last_picked_users": [
     "U08L3P4571B",
-    "U04RX1N2QCV",
-    "U06S6LA3F6G"
+    "U06ST0DS4N4",
+    "U04RX1N2QCV"
   ],
   "daily_threads": {
     "2026-03-09": {
