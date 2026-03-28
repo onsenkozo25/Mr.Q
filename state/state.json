@@ -209,12 +209,30 @@
       "dm": "D0A71HQA0US",
       "question": "尊敬しているメンバーの一面",
       "thread_ts": "1774611760.274289"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "行ってみたい国とその理由",
+      "thread_ts": "1774697448.910419"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "代表の好物はなんでしょうか",
+      "thread_ts": "1774697449.268449"
+    },
+    {
+      "user": "U06S46NMA66",
+      "dm": "D0A8G1P2BJP",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1774697449.625409"
     }
   ],
   "last_picked_users": [
     "U08L3P4571B",
-    "U06ST0DS4N4",
-    "U04RX1N2QCV"
+    "U08L3NZUELV",
+    "U06S46NMA66"
   ],
   "daily_threads": {
     "2026-03-09": {
