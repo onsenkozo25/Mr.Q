@@ -227,12 +227,30 @@
       "dm": "D0A6KC57Y13",
       "question": "自分の体で気に入ってるところ",
       "thread_ts": "1774783941.910249"
+    },
+    {
+      "user": "U08L3P3ELTF",
+      "dm": "D0A71HQGFNW",
+      "question": "きのこたけのこ、どっち？",
+      "thread_ts": "1774871696.354729"
+    },
+    {
+      "user": "U08L3P3LWDT",
+      "dm": "D0A763VS0KX",
+      "question": "みたらテンション上がるもの",
+      "thread_ts": "1774871696.550959"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "健康に気を遣えてますか？",
+      "thread_ts": "1774871696.785649"
     }
   ],
   "last_picked_users": [
     "U08L3P3ELTF",
-    "U06SGS1KBKK",
-    "U08L3P4571B"
+    "U08L3P3LWDT",
+    "U08L3P2MTHT"
   ],
   "daily_threads": {
     "2026-03-09": {
