@@ -239,12 +239,30 @@
       "dm": "D0AA4U19WPN",
       "question": "今日ヒヤっとしたこと",
       "thread_ts": "1774957948.943509"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "きのこたけのこ、どっち？",
+      "thread_ts": "1775044444.781009"
+    },
+    {
+      "user": "U04SCJCFCSD",
+      "dm": "D0A763W523X",
+      "question": "自分の体で気に入ってるところ",
+      "thread_ts": "1775044444.956519"
+    },
+    {
+      "user": "U08L3P38W5B",
+      "dm": "D0A7W1VN5DL",
+      "question": "代表の好物はなんでしょうか",
+      "thread_ts": "1775044445.180539"
     }
   ],
   "last_picked_users": [
-    "U06SGS14NHF",
-    "U06RXHDG4JJ",
-    "U04RX1N2QCV"
+    "U08L3P2MTHT",
+    "U04SCJCFCSD",
+    "U08L3P38W5B"
   ],
   "daily_threads": {
     "2026-03-09": {
