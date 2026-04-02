@@ -239,12 +239,30 @@
       "dm": "D0AA4U19WPN",
       "question": "今日ヒヤっとしたこと",
       "thread_ts": "1774957948.943509"
+    },
+    {
+      "user": "U08L3P3LWDT",
+      "dm": "D0A763VS0KX",
+      "question": "代表の好物はなんでしょうか",
+      "thread_ts": "1775130569.902639"
+    },
+    {
+      "user": "U08L3P4BKMK",
+      "dm": "D0A7HPDTXUJ",
+      "question": "みたらテンション上がるもの",
+      "thread_ts": "1775130570.415339"
+    },
+    {
+      "user": "U06RXHDG4JJ",
+      "dm": "D0A8NCP740J",
+      "question": "自分の体で気に入ってるところ",
+      "thread_ts": "1775130570.869779"
     }
   ],
   "last_picked_users": [
-    "U08L3P2MTHT",
-    "U04SCJCFCSD",
-    "U08L3P38W5B"
+    "U08L3P3LWDT",
+    "U08L3P4BKMK",
+    "U06RXHDG4JJ"
   ],
   "daily_threads": {
     "2026-03-09": {
