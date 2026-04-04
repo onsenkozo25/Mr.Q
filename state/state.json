@@ -257,12 +257,30 @@
       "dm": "D0AB4SDR51U",
       "question": "お小遣いあげたいメンバーは？",
       "thread_ts": "1775216370.552479"
+    },
+    {
+      "user": "U06S46NMA66",
+      "dm": "D0A8G1P2BJP",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1775302327.537259"
+    },
+    {
+      "user": "U08L3P3T9FF",
+      "dm": "D0A89275R52",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1775302327.803309"
+    },
+    {
+      "user": "U08L3P3ELTF",
+      "dm": "D0A71HQGFNW",
+      "question": "今日頑張ったこと",
+      "thread_ts": "1775302328.069879"
     }
   ],
   "last_picked_users": [
-    "U06ST0DS4N4",
-    "U04RTBG352A",
-    "U08L3P2MTHT"
+    "U06S46NMA66",
+    "U08L3P3T9FF",
+    "U08L3P3ELTF"
   ],
   "daily_threads": {
     "2026-03-09": {
