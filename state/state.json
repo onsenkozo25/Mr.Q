@@ -275,24 +275,6 @@
       "dm": "D0A71HQGFNW",
       "question": "今日頑張ったこと",
       "thread_ts": "1775302328.069879"
-    },
-    {
-      "user": "U04SCJCFCSD",
-      "dm": "D0A763W523X",
-      "question": "今日ヒヤっとしたこと",
-      "thread_ts": "1775476209.883429"
-    },
-    {
-      "user": "U08L3P2MTHT",
-      "dm": "D0AB4SDR51U",
-      "question": "健康に気を遣えてますか？",
-      "thread_ts": "1775476210.162419"
-    },
-    {
-      "user": "U08L3P4BKMK",
-      "dm": "D0A7HPDTXUJ",
-      "question": "自分の体で気に入ってるところ",
-      "thread_ts": "1775476210.432539"
     }
   ],
   "last_picked_users": [
@@ -354,6 +336,9 @@
     },
     "2026-04-03": {
       "thread_ts": "1775209531.291129"
+    },
+    "2026-04-07": {
+      "thread_ts": "1775556037.410299"
     }
   }
 }
