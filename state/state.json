@@ -293,12 +293,30 @@
       "dm": "D0AB21CA01J",
       "question": "行ってみたい国とその理由",
       "thread_ts": "1775562919.201219"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "健康に気を遣えてますか？",
+      "thread_ts": "1775649375.422129"
+    },
+    {
+      "user": "U08L3P3K2SZ",
+      "dm": "D0A7600EJCR",
+      "question": "自分の体で気に入ってるところ",
+      "thread_ts": "1775649375.758049"
+    },
+    {
+      "user": "U0521QF30GY",
+      "dm": "D0A6RM8G59U",
+      "question": "行ってみたい国とその理由",
+      "thread_ts": "1775649376.136379"
     }
   ],
   "last_picked_users": [
-    "U06SGS14NHF",
-    "U06SGS15WKT",
-    "U08L3P30NN9"
+    "U04RX1N2QCV",
+    "U08L3P3K2SZ",
+    "U0521QF30GY"
   ],
   "daily_threads": {
     "2026-03-09": {
