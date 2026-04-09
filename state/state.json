@@ -311,12 +311,30 @@
       "dm": "D0A6RM8G59U",
       "question": "行ってみたい国とその理由",
       "thread_ts": "1775649376.136379"
+    },
+    {
+      "user": "U04SCJCTMJ5",
+      "dm": "D0AS78P9F5F",
+      "question": "お小遣いあげたいメンバーは？",
+      "thread_ts": "1775735778.239369"
+    },
+    {
+      "user": "U06S4371MM1",
+      "dm": "D0A821ED5LM",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1775735778.610169"
+    },
+    {
+      "user": "U08L3P3K2SZ",
+      "dm": "D0A7600EJCR",
+      "question": "流石に譲れない趣味",
+      "thread_ts": "1775735778.929289"
     }
   ],
   "last_picked_users": [
-    "U04RX1N2QCV",
-    "U08L3P3K2SZ",
-    "U0521QF30GY"
+    "U04SCJCTMJ5",
+    "U06S4371MM1",
+    "U08L3P3K2SZ"
   ],
   "daily_threads": {
     "2026-03-09": {
