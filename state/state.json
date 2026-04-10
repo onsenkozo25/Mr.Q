@@ -323,12 +323,30 @@
       "dm": "D0A7600EJCR",
       "question": "流石に譲れない趣味",
       "thread_ts": "1775735778.929289"
+    },
+    {
+      "user": "U04SCJCFCSD",
+      "dm": "D0A763W523X",
+      "question": "きのこたけのこ、どっち？",
+      "thread_ts": "1775821874.667129"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "卒業記念で食べたいもの",
+      "thread_ts": "1775821875.302349"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1775821875.913599"
     }
   ],
   "last_picked_users": [
-    "U04SCJCTMJ5",
-    "U06S4371MM1",
-    "U08L3P3K2SZ"
+    "U04SCJCFCSD",
+    "U08L3P4571B",
+    "U08L3P30NN9"
   ],
   "daily_threads": {
     "2026-03-09": {
