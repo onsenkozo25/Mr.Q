@@ -347,12 +347,30 @@
       "dm": "D0A7N20NQU8",
       "question": "お小遣いあげたいメンバーは？",
       "thread_ts": "1775993774.711859"
+    },
+    {
+      "user": "U08L3P40UER",
+      "dm": "D0ACLB328QN",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1776081907.106449"
+    },
+    {
+      "user": "U04QQGXLE9X",
+      "dm": "D0A8HF16MD2",
+      "question": "卒業記念で食べたいもの",
+      "thread_ts": "1776081907.398379"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "きのこたけのこ、どっち？",
+      "thread_ts": "1776081907.705459"
     }
   ],
   "last_picked_users": [
-    "U08L3P4BKMK",
-    "U04RTBHG71C",
-    "U06SGS1KBKK"
+    "U08L3P40UER",
+    "U04QQGXLE9X",
+    "U08L3P30NN9"
   ],
   "daily_threads": {
     "2026-03-09": {
