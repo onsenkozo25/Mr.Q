@@ -365,12 +365,30 @@
       "dm": "D0AB21CA01J",
       "question": "きのこたけのこ、どっち？",
       "thread_ts": "1776081907.705459"
+    },
+    {
+      "user": "U08L3P3K2SZ",
+      "dm": "D0A7600EJCR",
+      "question": "代表の好物はなんでしょうか",
+      "thread_ts": "1776167890.356679"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1776167890.920289"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "きのこたけのこ、どっち？",
+      "thread_ts": "1776167891.508319"
     }
   ],
   "last_picked_users": [
-    "U08L3P40UER",
-    "U04QQGXLE9X",
-    "U08L3P30NN9"
+    "U08L3P3K2SZ",
+    "U08L3P2MTHT",
+    "U04RZRKCGPM"
   ],
   "daily_threads": {
     "2026-03-09": {
