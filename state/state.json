@@ -377,12 +377,30 @@
       "dm": "D0AB4SDR51U",
       "question": "尊敬しているメンバーの一面",
       "thread_ts": "1776167890.920289"
+    },
+    {
+      "user": "U08L3P40UER",
+      "dm": "D0ACLB328QN",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1776254212.478969"
+    },
+    {
+      "user": "U08L3P3NBEZ",
+      "dm": "D0A7EFP9Y5P",
+      "question": "健康に気を遣えてますか？",
+      "thread_ts": "1776254212.771399"
+    },
+    {
+      "user": "U08L3P3T9FF",
+      "dm": "D0A89275R52",
+      "question": "流石に譲れない趣味",
+      "thread_ts": "1776254213.142379"
     }
   ],
   "last_picked_users": [
-    "U08L3P3K2SZ",
-    "U08L3P2MTHT",
-    "U04RZRKCGPM"
+    "U08L3P40UER",
+    "U08L3P3NBEZ",
+    "U08L3P3T9FF"
   ],
   "daily_threads": {
     "2026-03-09": {
