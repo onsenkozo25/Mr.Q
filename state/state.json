@@ -395,12 +395,30 @@
       "dm": "D0A89275R52",
       "question": "流石に譲れない趣味",
       "thread_ts": "1776254213.142379"
+    },
+    {
+      "user": "U06ST0EKW9W",
+      "dm": "D0A81LEKCKW",
+      "question": "今日ヒヤっとしたこと",
+      "thread_ts": "1776340734.916369"
+    },
+    {
+      "user": "U04RTBHG71C",
+      "dm": "D0A7N20NQU8",
+      "question": "自分の体で気に入ってるところ",
+      "thread_ts": "1776340735.385719"
+    },
+    {
+      "user": "U04RX1N2QCV",
+      "dm": "D0AA4U19WPN",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1776340735.924039"
     }
   ],
   "last_picked_users": [
-    "U08L3P40UER",
-    "U08L3P3NBEZ",
-    "U08L3P3T9FF"
+    "U06ST0EKW9W",
+    "U04RTBHG71C",
+    "U04RX1N2QCV"
   ],
   "daily_threads": {
     "2026-03-09": {
