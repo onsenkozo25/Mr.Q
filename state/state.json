@@ -425,12 +425,30 @@
       "dm": "D0A7MBJMJ4C",
       "question": "今日頑張ったこと",
       "thread_ts": "1776426794.754469"
+    },
+    {
+      "user": "U06S4371MM1",
+      "dm": "D0A821ED5LM",
+      "question": "健康に気を遣えてますか？",
+      "thread_ts": "1776512204.468729"
+    },
+    {
+      "user": "U0521QF30GY",
+      "dm": "D0A6RM8G59U",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1776512204.795849"
+    },
+    {
+      "user": "U08L3P40UER",
+      "dm": "D0ACLB328QN",
+      "question": "卒業記念で食べたいもの",
+      "thread_ts": "1776512205.194059"
     }
   ],
   "last_picked_users": [
-    "U04RTBG352A",
-    "U08L3NWS7U5",
-    "U06SGS14NHF"
+    "U06S4371MM1",
+    "U0521QF30GY",
+    "U08L3P40UER"
   ],
   "daily_threads": {
     "2026-03-09": {
