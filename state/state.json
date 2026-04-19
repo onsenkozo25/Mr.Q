@@ -443,12 +443,30 @@
       "dm": "D0ACLB328QN",
       "question": "卒業記念で食べたいもの",
       "thread_ts": "1776512205.194059"
+    },
+    {
+      "user": "U08L3NZUELV",
+      "dm": "D0A7FNDHFNJ",
+      "question": "今日頑張ったこと",
+      "thread_ts": "1776598612.306799"
+    },
+    {
+      "user": "U08L3P3NBEZ",
+      "dm": "D0A7EFP9Y5P",
+      "question": "流石に譲れない趣味",
+      "thread_ts": "1776598612.579669"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "代表の好物はなんでしょうか",
+      "thread_ts": "1776598612.819039"
     }
   ],
   "last_picked_users": [
-    "U06S4371MM1",
-    "U0521QF30GY",
-    "U08L3P40UER"
+    "U08L3NZUELV",
+    "U08L3P3NBEZ",
+    "U06ST0DS4N4"
   ],
   "daily_threads": {
     "2026-03-09": {
