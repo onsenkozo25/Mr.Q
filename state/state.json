@@ -461,12 +461,30 @@
       "dm": "D0A8HF16MD2",
       "question": "代表の好物はなんでしょうか",
       "thread_ts": "1776686775.783779"
+    },
+    {
+      "user": "U06ST0EKW9W",
+      "dm": "D0A81LEKCKW",
+      "question": "最近の睡眠事情",
+      "thread_ts": "1776772820.498999"
+    },
+    {
+      "user": "U08L3P30NN9",
+      "dm": "D0AB21CA01J",
+      "question": "流石に譲れない趣味",
+      "thread_ts": "1776772820.800579"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "みたらテンション上がるもの",
+      "thread_ts": "1776772821.101009"
     }
   ],
   "last_picked_users": [
-    "U05K75QUXUP",
-    "U06RXHDG4JJ",
-    "U04QQGXLE9X"
+    "U06ST0EKW9W",
+    "U08L3P30NN9",
+    "U08L3P2MTHT"
   ],
   "daily_threads": {
     "2026-03-09": {
