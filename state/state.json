@@ -473,12 +473,30 @@
       "dm": "D0AB21CA01J",
       "question": "流石に譲れない趣味",
       "thread_ts": "1776772820.800579"
+    },
+    {
+      "user": "U08L3P4571B",
+      "dm": "D0A6KC57Y13",
+      "question": "流石に譲れない趣味",
+      "thread_ts": "1776857307.987149"
+    },
+    {
+      "user": "U08L3P3FYKF",
+      "dm": "D0AADSQ08M6",
+      "question": "今日ヒヤっとしたこと",
+      "thread_ts": "1776857308.449479"
+    },
+    {
+      "user": "U04SCJCTMJ5",
+      "dm": "D0AS78P9F5F",
+      "question": "卒業記念で食べたいもの",
+      "thread_ts": "1776857309.059399"
     }
   ],
   "last_picked_users": [
-    "U06ST0EKW9W",
-    "U08L3P30NN9",
-    "U08L3P2MTHT"
+    "U08L3P4571B",
+    "U08L3P3FYKF",
+    "U04SCJCTMJ5"
   ],
   "daily_threads": {
     "2026-03-09": {
