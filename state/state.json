@@ -491,12 +491,30 @@
       "dm": "D0AS78P9F5F",
       "question": "卒業記念で食べたいもの",
       "thread_ts": "1776857309.059399"
+    },
+    {
+      "user": "U06ST0DS4N4",
+      "dm": "D0A71HQA0US",
+      "question": "今日頑張ったこと",
+      "thread_ts": "1776943745.201689"
+    },
+    {
+      "user": "U06RXHDG4JJ",
+      "dm": "D0A8NCP740J",
+      "question": "卒業記念で食べたいもの",
+      "thread_ts": "1776943745.377989"
+    },
+    {
+      "user": "U06ST0E3XNC",
+      "dm": "D0A79GCD6JE",
+      "question": "そこそこ得意なこととそこそこ苦手なこと",
+      "thread_ts": "1776943745.567359"
     }
   ],
   "last_picked_users": [
-    "U08L3P4571B",
-    "U08L3P3FYKF",
-    "U04SCJCTMJ5"
+    "U06ST0DS4N4",
+    "U06RXHDG4JJ",
+    "U06ST0E3XNC"
   ],
   "daily_threads": {
     "2026-03-09": {
