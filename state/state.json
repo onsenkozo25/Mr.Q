@@ -497,12 +497,30 @@
       "dm": "D0A71HQA0US",
       "question": "今日頑張ったこと",
       "thread_ts": "1776943745.201689"
+    },
+    {
+      "user": "U05K75QUXUP",
+      "dm": "D0A9TJPRX41",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1777030154.529799"
+    },
+    {
+      "user": "U08L3P2MTHT",
+      "dm": "D0AB4SDR51U",
+      "question": "きのこたけのこ、どっち？",
+      "thread_ts": "1777030155.167389"
+    },
+    {
+      "user": "U08L3P3A9MK",
+      "dm": "D0A813MAL8J",
+      "question": "健康に気を遣えてますか？",
+      "thread_ts": "1777030155.835529"
     }
   ],
   "last_picked_users": [
-    "U06ST0DS4N4",
-    "U06RXHDG4JJ",
-    "U06ST0E3XNC"
+    "U05K75QUXUP",
+    "U08L3P2MTHT",
+    "U08L3P3A9MK"
   ],
   "daily_threads": {
     "2026-03-09": {
