@@ -539,12 +539,30 @@
       "dm": "D0A7N20NQU8",
       "question": "そこそこ得意なこととそこそこ苦手なこと",
       "thread_ts": "1777462502.751469"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "一週間休みがあったら何する？",
+      "thread_ts": "1777548869.012919"
+    },
+    {
+      "user": "U04RTBHG71C",
+      "dm": "D0A7N20NQU8",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1777548869.348039"
+    },
+    {
+      "user": "U04SCJCFCSD",
+      "dm": "D0A763W523X",
+      "question": "今日頑張ったこと",
+      "thread_ts": "1777548869.660259"
     }
   ],
   "last_picked_users": [
-    "U06ST0DS4N4",
-    "U04QQGXLE9X",
-    "U04RTBHG71C"
+    "U04RZRKCGPM",
+    "U04RTBHG71C",
+    "U04SCJCFCSD"
   ],
   "daily_threads": {
     "2026-03-09": {
