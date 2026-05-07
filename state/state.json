@@ -605,12 +605,30 @@
       "dm": "D0A89275R52",
       "question": "行ってみたい国とその理由",
       "thread_ts": "1777980731.833609"
+    },
+    {
+      "user": "U08L3P40UER",
+      "dm": "D0ACLB328QN",
+      "question": "代表の好物はなんでしょうか",
+      "thread_ts": "1778153873.014969"
+    },
+    {
+      "user": "U08L3P3NBEZ",
+      "dm": "D0A7EFP9Y5P",
+      "question": "きのこたけのこ、どっち？",
+      "thread_ts": "1778153873.274109"
+    },
+    {
+      "user": "U04QQGXLE9X",
+      "dm": "D0A8HF16MD2",
+      "question": "今日頑張ったこと",
+      "thread_ts": "1778153873.473099"
     }
   ],
   "last_picked_users": [
-    "U08L3P3FYKF",
-    "U08L3P2MTHT",
-    "U08L3P3T9FF"
+    "U08L3P40UER",
+    "U08L3P3NBEZ",
+    "U04QQGXLE9X"
   ],
   "daily_threads": {
     "2026-03-09": {
