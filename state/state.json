@@ -611,12 +611,30 @@
       "dm": "D0A7EFP9Y5P",
       "question": "きのこたけのこ、どっち？",
       "thread_ts": "1778153873.274109"
+    },
+    {
+      "user": "U0AQJB4J1JT",
+      "dm": "D0B2G3KKU30",
+      "question": "子供の頃勘違いしてたこと",
+      "thread_ts": "1778240086.452029"
+    },
+    {
+      "user": "U0AR3CEKAVA",
+      "dm": "D0B2MP8169J",
+      "question": "行ってみたい国とその理由",
+      "thread_ts": "1778240087.109949"
+    },
+    {
+      "user": "U04RZRKCGPM",
+      "dm": "D0A76L4SH3K",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1778240087.641309"
     }
   ],
   "last_picked_users": [
-    "U08L3P40UER",
-    "U08L3P3NBEZ",
-    "U04QQGXLE9X"
+    "U0AQJB4J1JT",
+    "U0AR3CEKAVA",
+    "U04RZRKCGPM"
   ],
   "daily_threads": {
     "2026-03-09": {
