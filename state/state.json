@@ -629,12 +629,30 @@
       "dm": "D0A76L4SH3K",
       "question": "尊敬しているメンバーの一面",
       "thread_ts": "1778240087.641309"
+    },
+    {
+      "user": "U06ST0EKW9W",
+      "dm": "D0A81LEKCKW",
+      "question": "尊敬しているメンバーの一面",
+      "thread_ts": "1778325697.615309"
+    },
+    {
+      "user": "U05K75QUXUP",
+      "dm": "D0A9TJPRX41",
+      "question": "卒業記念で食べたいもの",
+      "thread_ts": "1778325698.238009"
+    },
+    {
+      "user": "U08L3P40UER",
+      "dm": "D0ACLB328QN",
+      "question": "自分の体で気に入ってるところ",
+      "thread_ts": "1778325698.830709"
     }
   ],
   "last_picked_users": [
-    "U0AQJB4J1JT",
-    "U0AR3CEKAVA",
-    "U04RZRKCGPM"
+    "U06ST0EKW9W",
+    "U05K75QUXUP",
+    "U08L3P40UER"
   ],
   "daily_threads": {
     "2026-03-09": {
